@@ -31,6 +31,11 @@
             key-positions = <10 11>;
             bindings = <&kp TAB>;
         };
+
+        wn {
+            bindings = <&wn>;
+            key-positions = <11 12>;
+        };
     };
 
     macros {
@@ -60,6 +65,13 @@
             #binding-cells = <0>;
             bindings = <&kp N0 &kp N0>;
             label = "W0";
+        };
+
+        wn: wn {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N &kp N>;
+            label = "WN";
         };
     };
 
