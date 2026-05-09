@@ -54,6 +54,13 @@
             bindings = <&kp Y &kp O>;
             label = "YO";
         };
+
+        w0: w0 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N0 &kp N0>;
+            label = "W0";
+        };
     };
 
     keymap {
@@ -61,20 +68,20 @@
 
         default_layer {
             bindings = <
-&kp Y      &kp G     &kp D     &kp R        &kp B      &kp L      &kp COMMA    &kp U      &kp PERIOD  &kp X
-&kp S      &kp K     &kp T     &kp N        &kp H      &kp MINUS  &kp O        &kp A      &kp I       &kp E
-&kp F      &kp Z     &kp W     &kp M        &kp P      &kp J      &ya          &yu        &yo         &kp C
-&kp LSHFT  &kp LALT  &kp LCMD  &lt 2 SPACE  &kp LCTRL  &kp BSPC   &lt 1 ENTER  &kp RSHFT  &kp RSHFT   &kp V
+&kp Y           &kp G     &kp D     &kp R        &kp B      &kp L      &kp COMMA    &kp U      &kp PERIOD  &kp C
+&kp S           &kp K     &kp T     &kp N        &kp H      &kp MINUS  &kp O        &kp A      &kp I       &kp E
+&kp F           &kp Z     &kp W     &kp M        &kp P      &kp J      &ya          &yu        &yo         &kp V
+&mmv MOVE_LEFT  &kp LALT  &kp LCMD  &lt 2 SPACE  &kp LCTRL  &kp BSPC   &lt 1 ENTER  &kp RSHFT  &kp X       &mmv MOVE_RIGHT
             >;
         };
 
         layer1 {
             label = "NUMBER";
             bindings = <
-&kp N0     &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans  &kp MINUS  &trans     &kp UP    &trans     &trans
-&kp EQUAL  &kp N4        &kp N5        &kp N6        &trans  &kp PLUS   &kp LEFT   &kp DOWN  &kp RIGHT  &trans
-&trans     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &kp ASTRK  &kp SLASH  &kp LBKT  &kp RBKT   &trans
-&trans     &kp NUMBER_0  &trans        &kp LSHFT     &trans  &trans     &trans     &trans    &trans     &trans
+&kp N0     &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans      &kp MINUS  &trans     &kp UP    &trans     &trans
+&kp EQUAL  &kp N4        &kp N5        &kp N6        &kp MINUS   &kp PLUS   &kp LEFT   &kp DOWN  &kp RIGHT  &trans
+&trans     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PLUS    &kp ASTRK  &kp SLASH  &kp LBKT  &kp RBKT   &trans
+&trans     &trans        &kp N0        &w0           &kp PERIOD  &trans     &trans     &trans    &trans     &trans
             >;
         };
 
@@ -91,10 +98,10 @@
         layer3 {
             label = "MOUSE";
             bindings = <
-&trans     &trans  &trans    &trans    &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
-&trans     &trans  &trans    &trans    &trans  &trans  &trans    &trans    &trans    &trans
-&trans     &trans  &trans    &trans    &trans  &trans  &trans    &trans    &trans    &trans
-&kp LSHFT  &trans  &kp LCMD  &kp LALT  &to 0   &trans  &trans    &trans    &to 0     &kp RALT
+&trans          &trans          &trans    &trans           &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
+&trans          &kp LEFT_ARROW  &trans    &kp RIGHT_ARROW  &trans  &trans  &trans    &trans    &trans    &trans
+&trans          &trans          &trans    &trans           &trans  &trans  &trans    &trans    &trans    &trans
+&mmv MOVE_LEFT  &trans          &kp LCMD  &kp LALT         &to 0   &trans  &trans    &trans    &to 0     &mmv MOVE_RIGHT
             >;
         };
     };
