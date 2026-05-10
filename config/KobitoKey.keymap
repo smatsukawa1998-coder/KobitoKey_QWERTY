@@ -34,7 +34,7 @@
 
         wn {
             bindings = <&wn>;
-            key-positions = <11 12>;
+            key-positions = <17 18>;
         };
 
         bt {
@@ -85,10 +85,10 @@
 
         default_layer {
             bindings = <
-&kp Y             &kp G     &kp D     &kp R        &kp B         &kp L      &kp COMMA    &kp U     &kp PERIOD  &kp C
-&kp S             &kp K     &kp T     &kp N        &kp H         &kp MINUS  &kp O        &kp A     &kp I       &kp E
-&kp F             &kp Z     &kp W     &kp M        &kp P         &kp J      &ya          &yu       &yo         &kp V
-&kp LEFT_CONTROL  &kp LALT  &mkp MB4  &lt 2 SPACE  &kp LEFT_WIN  &kp BSPC   &lt 1 ENTER  &mkp MB5  &kp X       &kp RIGHT_SHIFT
+&kp Y             &kp G     &kp D     &kp R        &kp B     &kp L      &kp COMMA    &kp U         &kp PERIOD  &kp C
+&kp S             &kp K     &kp T     &kp N        &kp H     &kp MINUS  &kp O        &kp A         &kp I       &kp E
+&kp F             &kp Z     &kp W     &kp M        &kp P     &kp J      &ya          &yu           &yo         &kp V
+&kp LEFT_CONTROL  &kp LALT  &mkp MB4  &lt 2 SPACE  &mkp MB5  &kp BSPC   &lt 1 ENTER  &kp LEFT_WIN  &kp X       &kp RIGHT_SHIFT
             >;
         };
 
@@ -115,10 +115,10 @@
         layer3 {
             label = "MOUSE";
             bindings = <
-&trans  &trans          &trans    &trans           &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
-&trans  &msc SCRL_LEFT  &trans    &msc SCRL_RIGHT  &trans  &trans  &trans    &trans    &trans    &trans
-&trans  &trans          &trans    &trans           &trans  &trans  &trans    &trans    &trans    &trans
-&trans  &trans          &kp LCMD  &kp LALT         &trans  &trans  &trans    &trans    &to 0     &trans
+&trans  &trans          &trans     &trans           &trans     &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
+&trans  &msc SCRL_LEFT  &trans     &msc SCRL_RIGHT  &trans     &trans  &trans    &trans    &trans    &trans
+&trans  &trans          &trans     &trans           &trans     &trans  &trans    &trans    &trans    &trans
+&trans  &trans          &kp LC(Z)  &trans           &kp LC(Y)  &trans  &trans    &trans    &to 0     &trans
             >;
         };
 
