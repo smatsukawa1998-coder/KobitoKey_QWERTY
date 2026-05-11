@@ -108,7 +108,7 @@
 &kp AT_SIGN  &kp PERCENT  &kp ASTERISK      &kp SLASH             &kp PLUS   &kp CARET  &kp EXCLAMATION        &kp DOLLAR         &kp QUESTION  &kp INT_YEN
 &trans       &trans       &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS  &kp MINUS  &kp TILDE  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &trans        &trans
 &trans       &trans       &trans            &trans                &kp EQUAL  &trans     &trans                 &kp SEMICOLON      &kp COLON     &trans
-&trans       &trans       &trans            &trans                &trans     &kp DEL    &trans                 &trans             &trans        &trans
+&trans       &trans       &trans            &trans                &trans     &kp BSLH   &kp EXCLAMATION        &kp QUESTION       &trans        &trans
             >;
         };
 
