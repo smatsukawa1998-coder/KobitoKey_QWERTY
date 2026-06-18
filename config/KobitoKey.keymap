@@ -32,11 +32,6 @@
             bindings = <&kp TAB>;
         };
 
-        wn {
-            bindings = <&wn>;
-            key-positions = <17 18>;
-        };
-
         bt {
             bindings = <&mo 4>;
             key-positions = <33 36>;
@@ -85,9 +80,9 @@
 
         default_layer {
             bindings = <
-&kp B      &kp G  &kp D             &kp R        &kp Z       &ya       &kp COMMA    &kp U     &kp PERIOD  &kp C
-&kp H      &kp K  &kp T             &kp N        &kp S       &yu       &kp O        &kp A     &kp I       &kp E
-&kp P      &kp L  &kp W             &kp M        &kp F       &yo       &kp MINUS    &kp Y     &kp X       &kp V
+&kp B      &kp G  &kp D             &kp R        &kp Z       &trans    &kp COMMA    &kp U     &kp PERIOD  &kp C
+&kp H      &kp K  &kp T             &kp N        &kp S       &trans    &kp O        &kp A     &kp I       &kp E
+&kp P      &kp L  &kp W             &kp M        &kp F       &trans    &kp MINUS    &kp Y     &kp X       &kp V
 &kp LC(Z)  &kp J  &kp LEFT_CONTROL  &lt 2 SPACE  &kp RSHIFT  &kp BSPC  &lt 1 ENTER  &kp LCMD  &kp Q       &kp RC(Y)
             >;
         };
@@ -98,7 +93,7 @@
 &trans  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp PLUS       &trans  &trans    &kp UP    &trans     &trans
 &trans  &kp N4        &kp N5        &kp N6        &kp MINUS      &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans
 &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp LS(MINUS)  &trans  &trans    &kp F7    &kp F8     &trans
-&trans  &trans        &kp N0        &w0           &kp PERIOD     &trans  &trans    &trans    &trans     &trans
+&trans  &trans        &kp N0        &trans        &kp PERIOD     &trans  &trans    &trans    &trans     &trans
             >;
         };
 
