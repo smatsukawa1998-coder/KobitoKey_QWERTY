@@ -72,6 +72,14 @@
             label = "W0";
         };
 
+
+        ka: ka {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp K &kp A>;
+            label = "KA";
+        };
+
         wn: wn {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
