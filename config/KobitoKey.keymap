@@ -4,7 +4,7 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 
-/ {
+ / {
     combos {
         compatible = "zmk,combos";
 
@@ -39,40 +39,90 @@
     };
 
     macros {
+        // --- ア行 ---
+        A: A {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings = <&kp A>;
+            label = "A";
+        };
+        I: I {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings = <&kp I>;
+            label = "I";
+        };
+        U: U {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings = <&kp U>;
+            label = "U";
+        };
+        E: E {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings = <&kp E>;
+            label = "E";
+        };
+        O: O {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings = <&kp O>;
+            label = "O";
+        };
+
+        // --- カ行 ---
         KA: KA {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <10>;
             bindings = <&kp K &kp A>;
             label = "KA";
         };
-
         KI: KI {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <10>;
             bindings = <&kp K &kp I>;
             label = "KI";
         };
-
         KU: KU {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <10>;
             bindings = <&kp K &kp U>;
             label = "KU";
         };
-
         KE: KE {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <10>;
             bindings = <&kp K &kp E>;
             label = "KE";
         };
-
         KO: KO {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <10>;
             bindings = <&kp K &kp O>;
             label = "KO";
         };
+
         // --- サ行 ---
         SA: SA {
             compatible = "zmk,behavior-macro";
@@ -376,6 +426,7 @@
             bindings = <&kp N &kp N>;
             label = "NN";
         };
+
         // --- ガ行 (濁音) ---
         GA: GA {
             compatible = "zmk,behavior-macro";
@@ -585,6 +636,7 @@
             bindings = <&kp P &kp O>;
             label = "PO_P";
         };
+
         // --- キャ行 ---
         KYA: KYA {
             compatible = "zmk,behavior-macro";
@@ -767,10 +819,6 @@
             label = "RYO";
         };
 
-        // ==========================================
-        // --- 濁音ベースの拗音（拗濁音） ---
-        // ==========================================
-
         // --- ギャ行 ---
         GYA: GYA {
             compatible = "zmk,behavior-macro";
@@ -849,10 +897,6 @@
             label = "BYO";
         };
 
-        // ==========================================
-        // --- 半濁音ベースの拗音（拗半濁音） ---
-        // ==========================================
-
         // --- ピャ行 ---
         PYA: PYA {
             compatible = "zmk,behavior-macro";
@@ -878,9 +922,6 @@
             bindings = <&kp P &kp Y &kp O>;
             label = "PYO";
         };
-        // ==========================================
-        // --- 主要な外来音・特殊音 ---
-        // ==========================================
 
         // --- ヴ・ヴァ行 ---
         VU: VU {
@@ -1003,7 +1044,7 @@
             bindings = <&kp C &kp H &kp E>;
             label = "CHE";
         };
-        SHE_EX: SHE_EX { // 通常の「し（SI）」と区別するため名前に_EXを付与
+        SHE_EX: SHE_EX {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <10>;
@@ -1037,7 +1078,7 @@
             bindings = <&kp W &kp E>;
             label = "WE";
         };
-        WHO: WHO { // 「を（WO）」と区別するためWHO（うぉ）を採用
+        WHO: WHO {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <10>;
@@ -1063,9 +1104,6 @@
             bindings = <&kp T &kp S &kp A>;
             label = "TSA";
         };
-　　　　　// ==========================================
-        // --- 小文字（単音）全パターン ---
-        // ==========================================
 
         // --- 小さいア行 (ぁぃぅぇぉ) ---
         LA: LA {
@@ -1141,7 +1179,7 @@
             #binding-cells = <0>;
             wait-ms = <10>;
             tap-ms = <10>;
-            bindings = <&kp L &kp T &kp--  &kp U>; // 「っ」
+            bindings = <&kp L &kp T &kp U>;
             label = "LTU";
         };
         LWA: LWA {
@@ -1149,17 +1187,17 @@
             #binding-cells = <0>;
             wait-ms = <10>;
             tap-ms = <10>;
-            bindings = <&kp L &kp W &kp A>; // 「ゎ」
+            bindings = <&kp L &kp W &kp A>;
             label = "LWA";
         };
 
-        // --- 小さい「ヶ」「ヵ」（主にカタカナ・地名用） ---
+        // --- 小さい「ヶ」「ヵ」 ---
         LKE: LKE {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <10>;
             tap-ms = <10>;
-            bindings = <&kp L &kp K &kp E>; // 「ヶ」
+            bindings = <&kp L &kp K &kp E>;
             label = "LKE";
         };
         LKA: LKA {
@@ -1167,7 +1205,7 @@
             #binding-cells = <0>;
             wait-ms = <10>;
             tap-ms = <10>;
-            bindings = <&kp L &kp K &kp A>; // 「ヵ」
+            bindings = <&kp L &kp K &kp A>;
             label = "LKA";
         };
     };
