@@ -78,6 +78,7 @@
             bindings = <&kp N &kp N>;
             label = "WN";
         };
+
         ka: ka {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
