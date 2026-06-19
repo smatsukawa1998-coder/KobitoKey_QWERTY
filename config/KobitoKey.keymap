@@ -1922,39 +1922,39 @@
         layer1 {
             label = "NUMBER";
             bindings = <
-&trans  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp PLUS    &trans  &trans    &kp UP    &trans     &trans
-&trans  &kp N4        &kp N5        &kp N6        &kp MINUS   &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans
-&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp EQUAL   &trans  &trans    &trans    &trans     &trans
-&trans  &trans        &kp N0        &w0           &kp PERIOD  &trans  &trans    &trans    &trans     &trans
+&trans  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp PLUS       &trans  &trans    &kp UP    &trans     &trans
+&trans  &kp N4        &kp N5        &kp N6        &kp MINUS      &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans
+&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp LS(MINUS)  &trans  &trans    &trans    &trans     &trans
+&trans  &trans        &kp N0        &w0           &kp PERIOD     &trans  &trans    &trans    &trans     &trans
             >;
         };
 
         layer2 {
             label = "Symbol";
             bindings = <
-&kp AT_SIGN  &kp PERCENT  &kp ASTERISK      &kp SLASH             &kp PLUS   &kp CARET  &kp EXCLAMATION        &kp DOLLAR         &kp QUESTION  &kp INT_YEN
-&trans       &trans       &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS  &kp MINUS  &kp TILDE  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &trans        &trans
-&trans       &trans       &trans            &trans                &kp EQUAL  &trans     &trans                 &kp SEMICOLON      &kp COLON     &trans
-&trans       &trans       &trans            &trans                &trans     &kp BSLH   &kp EXCLAMATION        &kp QUESTION       &trans        &trans
+&kp LEFT_BRACKET  &kp PERCENT  &kp LS(SQT)        &kp SLASH   &kp LS(SEMICOLON)  &trans     &kp EXCLAMATION      &kp DOLLAR            &kp QUESTION  &kp INT_YEN
+&trans            &trans       &kp RIGHT_BRACKET  &kp LS(N8)  &kp MINUS          &kp EQUAL  &kp LS(N9)           &kp NON_US_BACKSLASH  &kp LS(N7)    &kp LS(NUMBER_2)
+&trans            &trans       &trans             &trans      &kp LS(MINUS)      &trans     &kp INTERNATIONAL_1  &kp COMMA             &kp COLON     &kp SQT
+&trans            &trans       &trans             &trans      &trans             &trans     &kp EXCLAMATION      &kp QUESTION          &trans        &trans
             >;
         };
 
         layer3 {
             label = "MOUSE";
             bindings = <
-&trans  &trans  &trans     &trans  &trans     &mkp MB4  &mkp MB1  &mkp MB3          &mkp MB2  &mkp MB5
-&trans  &trans  &trans     &trans  &trans     &trans    &trans    &kp LEFT_CONTROL  &trans    &trans
-&trans  &trans  &trans     &trans  &trans     &trans    &trans    &trans            &trans    &trans
-&trans  &trans  &kp LC(Z)  &trans  &kp LC(Y)  &mo 4     &trans    &trans            &trans    &trans
+&trans  &trans  &trans     &trans  &trans     &mkp MB4  &mkp MB1          &mkp MB3          &mkp MB2  &mkp MB5
+&trans  &trans  &trans     &trans  &trans     &trans    &trans            &kp LEFT_CONTROL  &trans    &trans
+&trans  &trans  &trans     &trans  &trans     &trans    &trans            &trans            &trans    &trans
+&trans  &trans  &kp LC(Z)  &trans  &kp LC(Y)  &mo 4     &kp LEFT_CONTROL  &kp LEFT_SHIFT    &trans    &trans
             >;
         };
 
         layer4 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans    &trans
             >;
 
             label = "mouse delicate";
