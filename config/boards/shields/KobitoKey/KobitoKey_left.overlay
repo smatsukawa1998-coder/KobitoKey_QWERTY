@@ -44,6 +44,14 @@
         x-input-code = <INPUT_REL_X>;
         y-input-code = <INPUT_REL_Y>;
     };
+/* 特定のレイヤー（例では4）がONのときの挙動 */
+    horizontal_scroll {
+        layers = <4>; /* 横スクロールに切り替えたいレイヤー番号 */
+        input-processors = <
+            &zip_xy_to_scroll_mapper                  /* カーソル移動をスクロールに変換 */
+            &zip_scroll_transform INPUT_TRANSFORM_XY_SWAP /* 縦スクロールを横スクロールに変換 */
+　　　　>;
+    };
 };
 
 / {
@@ -87,10 +95,10 @@
     status = "okay";
 
     smaller_dpi {
-        layers = <7>;
+        layers = <4>;
         input-processors =
         <&sensor_rotation_right>,
-            <&zip_xy_scaler 1 5>;
+            <&zip_xy_scaler 1 4>;
     };
 
     change_layer {
