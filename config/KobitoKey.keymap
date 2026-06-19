@@ -59,6 +59,7 @@
         };
 
         // --- カ行 ---
+
         KA: KA {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -67,6 +68,7 @@
             bindings = <&kp K &kp A>;
             label = "KA";
         };
+
         KI: KI {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -75,6 +77,7 @@
             bindings = <&kp K &kp I>;
             label = "KI";
         };
+
         KU: KU {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -83,6 +86,7 @@
             bindings = <&kp K &kp U>;
             label = "KU";
         };
+
         KE: KE {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -91,6 +95,7 @@
             bindings = <&kp K &kp E>;
             label = "KE";
         };
+
         KO: KO {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -101,6 +106,7 @@
         };
 
         // --- サ行 ---
+
         SA: SA {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -109,6 +115,7 @@
             bindings = <&kp S &kp A>;
             label = "SA";
         };
+
         SI: SI {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -117,6 +124,7 @@
             bindings = <&kp S &kp I>;
             label = "SI";
         };
+
         SU: SU {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -125,6 +133,7 @@
             bindings = <&kp S &kp U>;
             label = "SU";
         };
+
         SE: SE {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -133,6 +142,7 @@
             bindings = <&kp S &kp E>;
             label = "SE";
         };
+
         SO: SO {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -143,6 +153,7 @@
         };
 
         // --- タ行 ---
+
         TA: TA {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -151,6 +162,7 @@
             bindings = <&kp T &kp A>;
             label = "TA";
         };
+
         TI: TI {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -159,6 +171,7 @@
             bindings = <&kp T &kp I>;
             label = "TI";
         };
+
         TU: TU {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -167,6 +180,7 @@
             bindings = <&kp T &kp U>;
             label = "TU";
         };
+
         TE: TE {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -175,6 +189,7 @@
             bindings = <&kp T &kp E>;
             label = "TE";
         };
+
         TO: TO {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -185,6 +200,7 @@
         };
 
         // --- ナ行 ---
+
         NA: NA {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -193,6 +209,7 @@
             bindings = <&kp N &kp A>;
             label = "NA";
         };
+
         NI: NI {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -201,6 +218,7 @@
             bindings = <&kp N &kp I>;
             label = "NI";
         };
+
         NU: NU {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -209,6 +227,7 @@
             bindings = <&kp N &kp U>;
             label = "NU";
         };
+
         NE: NE {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -217,6 +236,7 @@
             bindings = <&kp N &kp E>;
             label = "NE";
         };
+
         NO: NO {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -227,6 +247,7 @@
         };
 
         // --- ハ行 ---
+
         HA: HA {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -235,6 +256,7 @@
             bindings = <&kp H &kp A>;
             label = "HA";
         };
+
         HI: HI {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -243,6 +265,7 @@
             bindings = <&kp H &kp I>;
             label = "HI";
         };
+
         HU: HU {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -251,6 +274,7 @@
             bindings = <&kp H &kp U>;
             label = "HU";
         };
+
         HE: HE {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -259,6 +283,7 @@
             bindings = <&kp H &kp E>;
             label = "HE";
         };
+
         HO: HO {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -269,6 +294,7 @@
         };
 
         // --- マ行 ---
+
         MA: MA {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -277,6 +303,7 @@
             bindings = <&kp M &kp A>;
             label = "MA";
         };
+
         MI: MI {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -285,6 +312,7 @@
             bindings = <&kp M &kp I>;
             label = "MI";
         };
+
         MU: MU {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -293,6 +321,7 @@
             bindings = <&kp M &kp U>;
             label = "MU";
         };
+
         ME: ME {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -301,6 +330,7 @@
             bindings = <&kp M &kp E>;
             label = "ME";
         };
+
         MO: MO {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -311,6 +341,7 @@
         };
 
         // --- ヤ行 ---
+
         YA: YA {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -319,6 +350,7 @@
             bindings = <&kp Y &kp A>;
             label = "YA";
         };
+
         YU: YU {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -327,6 +359,7 @@
             bindings = <&kp Y &kp U>;
             label = "YU";
         };
+
         YO: YO {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -337,7 +370,8 @@
         };
 
         // --- ラ行 ---
-        RA: RA {
+
+        ra: RA {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <10>;
@@ -345,6 +379,7 @@
             bindings = <&kp R &kp A>;
             label = "RA";
         };
+
         RI: RI {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -353,6 +388,7 @@
             bindings = <&kp R &kp I>;
             label = "RI";
         };
+
         RU: RU {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -361,6 +397,7 @@
             bindings = <&kp R &kp U>;
             label = "RU";
         };
+
         RE: RE {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -369,6 +406,7 @@
             bindings = <&kp R &kp E>;
             label = "RE";
         };
+
         RO: RO {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -379,6 +417,7 @@
         };
 
         // --- ワ行 ・ ン ---
+
         WA: WA {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -387,6 +426,7 @@
             bindings = <&kp W &kp A>;
             label = "WA";
         };
+
         WO: WO {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -395,6 +435,7 @@
             bindings = <&kp W &kp O>;
             label = "WO";
         };
+
         NN: NN {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -405,6 +446,7 @@
         };
 
         // --- ガ行 (濁音) ---
+
         GA: GA {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -413,6 +455,7 @@
             bindings = <&kp G &kp A>;
             label = "GA";
         };
+
         GI: GI {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -421,6 +464,7 @@
             bindings = <&kp G &kp I>;
             label = "GI";
         };
+
         GU: GU {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -429,6 +473,7 @@
             bindings = <&kp G &kp U>;
             label = "GU";
         };
+
         GE: GE {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -437,6 +482,7 @@
             bindings = <&kp G &kp E>;
             label = "GE";
         };
+
         GO: GO {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -447,6 +493,7 @@
         };
 
         // --- ザ行 (濁音) ---
+
         ZA: ZA {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -455,6 +502,7 @@
             bindings = <&kp Z &kp A>;
             label = "ZA";
         };
+
         ZI: ZI {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -463,6 +511,7 @@
             bindings = <&kp Z &kp I>;
             label = "ZI";
         };
+
         ZU: ZU {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -471,6 +520,7 @@
             bindings = <&kp Z &kp U>;
             label = "ZU";
         };
+
         ZE: ZE {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -479,6 +529,7 @@
             bindings = <&kp Z &kp E>;
             label = "ZE";
         };
+
         ZO: ZO {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -489,6 +540,7 @@
         };
 
         // --- ダ行 (濁音) ---
+
         DA: DA {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -497,6 +549,7 @@
             bindings = <&kp D &kp A>;
             label = "DA";
         };
+
         DI: DI {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -505,6 +558,7 @@
             bindings = <&kp D &kp I>;
             label = "DI";
         };
+
         DU: DU {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -513,6 +567,7 @@
             bindings = <&kp D &kp U>;
             label = "DU";
         };
+
         DE: DE {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -521,6 +576,7 @@
             bindings = <&kp D &kp E>;
             label = "DE";
         };
+
         DO: DO {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -531,6 +587,7 @@
         };
 
         // --- バ行 (濁音) ---
+
         BA_D: BA_D {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -539,6 +596,7 @@
             bindings = <&kp B &kp A>;
             label = "BA_D";
         };
+
         BI_D: BI_D {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -547,6 +605,7 @@
             bindings = <&kp B &kp I>;
             label = "BI_D";
         };
+
         BU_D: BU_D {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -555,6 +614,7 @@
             bindings = <&kp B &kp U>;
             label = "BU_D";
         };
+
         BE_D: BE_D {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -563,6 +623,7 @@
             bindings = <&kp B &kp E>;
             label = "BE_D";
         };
+
         BO_D: BO_D {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -573,6 +634,7 @@
         };
 
         // --- パ行 (半濁音) ---
+
         PA_P: PA_P {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -581,6 +643,7 @@
             bindings = <&kp P &kp A>;
             label = "PA_P";
         };
+
         PI_P: PI_P {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -589,6 +652,7 @@
             bindings = <&kp P &kp I>;
             label = "PI_P";
         };
+
         PU_P: PU_P {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -597,6 +661,7 @@
             bindings = <&kp P &kp U>;
             label = "PU_P";
         };
+
         PE_P: PE_P {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -605,6 +670,7 @@
             bindings = <&kp P &kp E>;
             label = "PE_P";
         };
+
         PO_P: PO_P {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -615,6 +681,7 @@
         };
 
         // --- キャ行 ---
+
         KYA: KYA {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -623,6 +690,7 @@
             bindings = <&kp K &kp Y &kp A>;
             label = "KYA";
         };
+
         KYU: KYU {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -631,6 +699,7 @@
             bindings = <&kp K &kp Y &kp U>;
             label = "KYU";
         };
+
         KYO: KEYO {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -641,6 +710,7 @@
         };
 
         // --- シャ行 ---
+
         SHA: SHA {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -649,6 +719,7 @@
             bindings = <&kp S &kp H &kp A>;
             label = "SHA";
         };
+
         SHU: SHU {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -657,6 +728,7 @@
             bindings = <&kp S &kp H &kp U>;
             label = "SHU";
         };
+
         SHO: SHO {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -667,6 +739,7 @@
         };
 
         // --- チャ行 ---
+
         CHA: CHA {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -675,6 +748,7 @@
             bindings = <&kp C &kp H &kp A>;
             label = "CHA";
         };
+
         CHU: CHU {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -683,6 +757,7 @@
             bindings = <&kp C &kp H &kp U>;
             label = "CHU";
         };
+
         CHO: CHO {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -693,6 +768,7 @@
         };
 
         // --- ニャ行 ---
+
         NYA: NYA {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -701,6 +777,7 @@
             bindings = <&kp N &kp Y &kp A>;
             label = "NYA";
         };
+
         NYU: NYU {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -709,6 +786,7 @@
             bindings = <&kp N &kp Y &kp U>;
             label = "NYU";
         };
+
         NYO: NYO {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -719,6 +797,7 @@
         };
 
         // --- ヒャ行 ---
+
         HYA: HYA {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -727,6 +806,7 @@
             bindings = <&kp H &kp Y &kp A>;
             label = "HYA";
         };
+
         HYU: HYU {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -735,6 +815,7 @@
             bindings = <&kp H &kp Y &kp U>;
             label = "HYU";
         };
+
         HYO: HYO {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -745,6 +826,7 @@
         };
 
         // --- ミャ行 ---
+
         MYA: MYA {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -753,6 +835,7 @@
             bindings = <&kp M &kp Y &kp A>;
             label = "MYA";
         };
+
         MYU: MYU {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -761,6 +844,7 @@
             bindings = <&kp M &kp Y &kp U>;
             label = "MYU";
         };
+
         MYO: MYO {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -771,6 +855,7 @@
         };
 
         // --- リャ行 ---
+
         RYA: RYA {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -779,6 +864,7 @@
             bindings = <&kp R &kp Y &kp A>;
             label = "RYA";
         };
+
         RYU: RYU {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -787,6 +873,7 @@
             bindings = <&kp R &kp Y &kp U>;
             label = "RYU";
         };
+
         RYO: RYO {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -797,6 +884,7 @@
         };
 
         // --- ギャ行 ---
+
         GYA: GYA {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -805,6 +893,7 @@
             bindings = <&kp G &kp Y &kp A>;
             label = "GYA";
         };
+
         GYU: GYU {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -813,6 +902,7 @@
             bindings = <&kp G &kp Y &kp U>;
             label = "GYU";
         };
+
         GYO: GYO {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -823,6 +913,7 @@
         };
 
         // --- ジャ行 ---
+
         JA: JA {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -831,6 +922,7 @@
             bindings = <&kp J &kp A>;
             label = "JA";
         };
+
         JU: JU {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -839,6 +931,7 @@
             bindings = <&kp J &kp U>;
             label = "JU";
         };
+
         JO: JO {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -849,6 +942,7 @@
         };
 
         // --- ビャ行 ---
+
         BYA: BYA {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -857,6 +951,7 @@
             bindings = <&kp B &kp Y &kp A>;
             label = "BYA";
         };
+
         BYU: BYU {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -865,6 +960,7 @@
             bindings = <&kp B &kp Y &kp U>;
             label = "BYU";
         };
+
         BYO: BYO {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -875,6 +971,7 @@
         };
 
         // --- ピャ行 ---
+
         PYA: PYA {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -883,6 +980,7 @@
             bindings = <&kp P &kp Y &kp A>;
             label = "PYA";
         };
+
         PYU: PYU {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -891,6 +989,7 @@
             bindings = <&kp P &kp Y &kp U>;
             label = "PYU";
         };
+
         PYO: PYO {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -901,6 +1000,7 @@
         };
 
         // --- ヴ・ヴァ行 ---
+
         VU: VU {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -909,6 +1009,7 @@
             bindings = <&kp V &kp U>;
             label = "VU";
         };
+
         VA: VA {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -917,6 +1018,7 @@
             bindings = <&kp V &kp A>;
             label = "VA";
         };
+
         VI: VI {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -925,6 +1027,7 @@
             bindings = <&kp V &kp I>;
             label = "VI";
         };
+
         VE: VE {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -933,6 +1036,7 @@
             bindings = <&kp V &kp E>;
             label = "VE";
         };
+
         VO: VO {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -943,6 +1047,7 @@
         };
 
         // --- ティ・トゥ ---
+
         THI: THI {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -951,6 +1056,7 @@
             bindings = <&kp T &kp H &kp I>;
             label = "THI";
         };
+
         TWU: TWU {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -961,6 +1067,7 @@
         };
 
         // --- ディ・ドゥ ---
+
         DHI: DHI {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -969,6 +1076,7 @@
             bindings = <&kp D &kp H &kp I>;
             label = "DHI";
         };
+
         DWU: DWU {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -979,6 +1087,7 @@
         };
 
         // --- ファ・フィ・フェ・フォ ---
+
         FA: FA {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -987,6 +1096,7 @@
             bindings = <&kp F &kp A>;
             label = "FA";
         };
+
         FI: FI {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -995,6 +1105,7 @@
             bindings = <&kp F &kp I>;
             label = "FI";
         };
+
         FE: FE {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -1003,6 +1114,7 @@
             bindings = <&kp F &kp E>;
             label = "FE";
         };
+
         FO: FO {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -1013,6 +1125,7 @@
         };
 
         // --- チェ・シェ・ジェ ---
+
         CHE: CHE {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -1021,6 +1134,7 @@
             bindings = <&kp C &kp H &kp E>;
             label = "CHE";
         };
+
         SHE_EX: SHE_EX {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -1029,6 +1143,7 @@
             bindings = <&kp S &kp H &kp E>;
             label = "SHE_EX";
         };
+
         JE: JE {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -1039,6 +1154,7 @@
         };
 
         // --- ウィ・ウェ・ウォ ---
+
         WI: WI {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -1047,6 +1163,7 @@
             bindings = <&kp W &kp I>;
             label = "WI";
         };
+
         WE: WE {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -1055,6 +1172,7 @@
             bindings = <&kp W &kp E>;
             label = "WE";
         };
+
         WHO: WHO {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -1065,6 +1183,7 @@
         };
 
         // --- クァ・ツァ ---
+
         QA: QA {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -1073,6 +1192,7 @@
             bindings = <&kp Q &kp A>;
             label = "QA";
         };
+
         TSA: TSA {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -1083,7 +1203,8 @@
         };
 
         // --- 小さいア行 (ぁぃぅぇぉ) ---
-        LA: LA {
+
+        la: LA {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <10>;
@@ -1091,6 +1212,7 @@
             bindings = <&kp L &kp A>;
             label = "LA";
         };
+
         LI: LI {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -1099,6 +1221,7 @@
             bindings = <&kp L &kp I>;
             label = "LI";
         };
+
         LU: LU {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -1107,6 +1230,7 @@
             bindings = <&kp L &kp U>;
             label = "LU";
         };
+
         LE: LE {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -1115,6 +1239,7 @@
             bindings = <&kp L &kp E>;
             label = "LE";
         };
+
         LO: LO {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -1125,6 +1250,7 @@
         };
 
         // --- 小さいヤ行 (ゃゅょ) ---
+
         LYA: LYA {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -1133,6 +1259,7 @@
             bindings = <&kp L &kp Y &kp A>;
             label = "LYA";
         };
+
         LYU: LYU {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -1141,6 +1268,7 @@
             bindings = <&kp L &kp Y &kp U>;
             label = "LYU";
         };
+
         LYO: LYO {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -1151,6 +1279,7 @@
         };
 
         // --- 小さい「っ」(促音) ・「ゎ」 ---
+
         LTU: LTU {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -1159,6 +1288,7 @@
             bindings = <&kp L &kp T &kp U>;
             label = "LTU";
         };
+
         LWA: LWA {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -1169,6 +1299,7 @@
         };
 
         // --- 小さい「ヶ」「ヵ」 ---
+
         LKE: LKE {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -1177,6 +1308,7 @@
             bindings = <&kp L &kp K &kp E>;
             label = "LKE";
         };
+
         LKA: LKA {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -1192,9 +1324,9 @@
 
         default_layer {
             bindings = <
-&kp B      &kp G  &kp D             &kp R        &kp Z       &kp X       &kp COMMA    &kp U     &kp PERIOD  &kp C
-&kp H      &kp K  &kp T             &kp N        &kp S       &kp X       &kp O        &kp A     &kp I       &kp E
-&kp P      &kp L  &kp W             &kp M        &kp F       &kp V       &kp MINUS    &kp Y     &kp X       &kp V
+&kp B      &kp G  &kp D             &kp R        &kp Z       &kp X     &kp COMMA    &kp U     &kp PERIOD  &kp C
+&kp H      &kp K  &kp T             &kp N        &kp S       &kp X     &kp O        &kp A     &kp I       &kp E
+&kp P      &kp L  &kp W             &kp M        &kp F       &kp V     &kp MINUS    &kp Y     &kp X       &kp V
 &kp LC(Z)  &kp J  &kp LEFT_CONTROL  &lt 2 SPACE  &kp RSHIFT  &kp BSPC  &lt 1 ENTER  &kp LCMD  &kp Q       &kp RC(Y)
             >;
         };
