@@ -44,27 +44,6 @@
     };
 
     macros {
-        ya: ya {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp Y &kp A>;
-            label = "YA";
-        };
-
-        yu: yu {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp Y &kp U>;
-            label = "YU";
-        };
-
-        yo: yo {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp Y &kp O>;
-            label = "YO";
-        };
-
         w0: w0 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -1213,9 +1192,9 @@
 
         default_layer {
             bindings = <
-&kp B      &kp G  &kp D             &kp R        &kp Z       &ya       &kp COMMA    &kp U     &kp PERIOD  &kp C
-&kp H      &kp K  &kp T             &kp N        &kp S       &yu       &kp O        &kp A     &kp I       &kp E
-&kp P      &kp L  &kp W             &kp M        &kp F       &yo       &kp MINUS    &kp Y     &kp X       &kp V
+&kp B      &kp G  &kp D             &kp R        &kp Z       &kp X       &kp COMMA    &kp U     &kp PERIOD  &kp C
+&kp H      &kp K  &kp T             &kp N        &kp S       &kp X       &kp O        &kp A     &kp I       &kp E
+&kp P      &kp L  &kp W             &kp M        &kp F       &kp V       &kp MINUS    &kp Y     &kp X       &kp V
 &kp LC(Z)  &kp J  &kp LEFT_CONTROL  &lt 2 SPACE  &kp RSHIFT  &kp BSPC  &lt 1 ENTER  &kp LCMD  &kp Q       &kp RC(Y)
             >;
         };
