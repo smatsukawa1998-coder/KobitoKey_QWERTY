@@ -1934,7 +1934,7 @@
         layer2 {
             label = "Symbol";
             bindings = <
-&kp LEFT_BRACKET  &kp PERCENT  &kp LS(SQT)        &kp SLASH   &kp LS(SEMICOLON)  &trans     &kp EXCLAMATION      &kp DOLLAR            &kp QUESTION  &kp INT_YEN
+&kp LEFT_BRACKET  &kp PERCENT  &kp LS(SQT)        &kp SLASH   &kp LS(SEMICOLON)  &kp SLASH  &kp EXCLAMATION      &kp DOLLAR            &kp QUESTION  &kp INT_YEN
 &trans            &trans       &kp RIGHT_BRACKET  &kp LS(N8)  &kp MINUS          &kp EQUAL  &kp LS(N9)           &kp NON_US_BACKSLASH  &kp LS(N7)    &kp LS(NUMBER_2)
 &trans            &trans       &trans             &trans      &kp LS(MINUS)      &trans     &kp INTERNATIONAL_1  &kp COMMA             &kp COLON     &kp SQT
 &trans            &trans       &trans             &trans      &trans             &trans     &kp EXCLAMATION      &kp QUESTION          &trans        &trans
