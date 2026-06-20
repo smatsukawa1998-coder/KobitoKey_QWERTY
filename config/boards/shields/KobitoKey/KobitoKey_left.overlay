@@ -65,8 +65,10 @@
 &tb_left_listener {
     status = "okay";
     device = <&tb_left>;
-
-    input-processors =
+/* 通常時（Ctrlを押していないとき）の動作 */
+    default_scroll {
+        layers = <3>; 
+        input-processors =
             <&sensor_rotation_left>,
             <&zip_x_scaler 0 1>,
             <&zip_y_scaler 1 15>,
@@ -74,6 +76,22 @@
             <&zip_scroll_transform INPUT_TRANSFORM_Y_INVERT>,
             <&zip_scroll_transform INPUT_TRANSFORM_X_INVERT>;
     };
+
+    /* 【追加】左Ctrlが押されている間の動作 */
+    ctrl_horizontal_scroll {
+        modifiers = <MOD_LCTL　MOD_RCTL>; 
+        
+        input-processors =
+            <&sensor_rotation_left>,
+            <&zip_x_scaler 0 1>,
+            <&zip_y_scaler 1 15>,
+            <&zip_xy_to_scroll_mapper>,
+            /* ここで縦と横のスクロール入力を入れ替える */
+            <&zip_scroll_transform INPUT_TRANSFORM_XY_SWAP>,
+            <&zip_scroll_transform INPUT_TRANSFORM_Y_INVERT>,
+            <&zip_scroll_transform INPUT_TRANSFORM_X_INVERT>;
+    };
+};
 
 / {
   /omit-if-no-ref/ zip_temp_layer: zip_temp_layer {
