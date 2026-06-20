@@ -1944,7 +1944,7 @@
         layer3 {
             label = "MOUSE";
             bindings = <
-&trans  &trans  &trans     &trans  &trans     &mkp MB4  &mkp MB1   &mo 4           &mkp MB2  &mkp MB5
+&kp N6  &kp N7  &kp N8     &kp N9  &kp N0     &mkp MB4  &mkp MB1   &mo 4           &mkp MB2  &mkp MB5
 &trans  &trans  &trans     &trans  &trans     &trans    &kp LCTRL  &mkp MB3        &trans    &trans
 &trans  &trans  &trans     &trans  &trans     &trans    &trans     &trans          &trans    &trans
 &trans  &trans  &kp LC(Z)  &trans  &kp LC(Y)  &trans    &trans     &kp LEFT_SHIFT  &trans    &trans
