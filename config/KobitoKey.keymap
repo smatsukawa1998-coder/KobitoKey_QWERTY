@@ -581,11 +581,13 @@
         combokanalayer {
             bindings = <&kanalayer>;
             key-positions = <16 17>;
+            timeout-ms = <60>;
         };
 
         comboenglayer {
             bindings = <&englayer>;
             key-positions = <12 13>;
+            timeout-ms = <50>;
         };
 
         enter {
@@ -1872,14 +1874,14 @@
         kanalayer: kana {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LANGUAGE_2 &tog 5>;
+            bindings = <&kp LANGUAGE_2 &to 5>;
             label = "KANA";
         };
 
         englayer: englayer {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LANGUAGE_1 &tog 0>;
+            bindings = <&kp LANGUAGE_1 &to 0>;
             label = "ENGLAYER";
         };
 
@@ -1942,10 +1944,10 @@
         layer3 {
             label = "MOUSE";
             bindings = <
-&trans  &trans  &trans     &trans  &trans     &mkp MB4  &mkp MB1          &mkp MB3          &mkp MB2  &mkp MB5
-&trans  &trans  &trans     &trans  &trans     &trans    &trans            &kp LEFT_CONTROL  &trans    &trans
-&trans  &trans  &trans     &trans  &trans     &trans    &trans            &trans            &trans    &trans
-&trans  &trans  &kp LC(Z)  &trans  &kp LC(Y)  &mo 4     &kp LEFT_CONTROL  &kp LEFT_SHIFT    &trans    &trans
+&trans  &trans  &trans     &trans  &trans     &mkp MB4  &mkp MB1          &mkp MB3        &mkp MB2  &mkp MB5
+&trans  &trans  &trans     &trans  &trans     &trans    &trans            &mo 4           &trans    &trans
+&trans  &trans  &trans     &trans  &trans     &trans    &trans            &trans          &trans    &trans
+&trans  &trans  &kp LC(Z)  &trans  &kp LC(Y)  &mo 4     &kp LEFT_CONTROL  &kp LEFT_SHIFT  &trans    &trans
             >;
         };
 
