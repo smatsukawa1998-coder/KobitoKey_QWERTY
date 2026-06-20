@@ -80,7 +80,7 @@ horizontal_scroll {
                 <&sensor_rotation_left>,
                 <&zip_x_scaler 0 1>,
                 <&zip_y_scaler 1 15>,
-                <&zip_xy_swap>,
+                <&zip_xy_transform INPUT_TRANSFORM_XY_SWAP>,
                 <&zip_xy_to_scroll_mapper>,
                 <&zip_scroll_transform INPUT_TRANSFORM_X_INVERT>;
     };
