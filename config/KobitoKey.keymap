@@ -5,13 +5,14 @@
 #include <dt-bindings/zmk/pointing.h>
 
 // レイヤーのインデックスを分かりやすく定義
+
 #define DEF 0
 #define NUM 1
 #define SYM 2
 #define MSE 3
 #define BTH 4
 
- / {
+/ {
     combos {
         compatible = "zmk,combos";
 
@@ -47,46 +48,240 @@
 
     macros {
         // --- ア行 ---
-        A: A { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>; bindings = <&kp A>; label = "A"; };
-        I: I { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>; bindings = <&kp I>; label = "I"; };
-        U: U { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>; bindings = <&kp U>; label = "U"; };
-        E: E { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>; bindings = <&kp E>; label = "E"; };
-        O: O { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>; bindings = <&kp O>; label = "O"; };
-
         // --- カ行 ---
-        KA: KA { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>; bindings = <&kp K &kp A>; label = "KA"; };
-        KI: KI { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>; bindings = <&kp K &kp I>; label = "KI"; };
-        KU: KU { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>; bindings = <&kp K &kp U>; label = "KU"; };
-        KE: KE { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>; bindings = <&kp K &kp E>; label = "KE"; };
-        KO: KO { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>; bindings = <&kp K &kp O>; label = "KO"; };
+
+        KA: KA {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings = <&kp K &kp A>;
+            label = "KA";
+        };
+
+        KI: KI {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings = <&kp K &kp I>;
+            label = "KI";
+        };
+
+        KU: KU {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings = <&kp K &kp U>;
+            label = "KU";
+        };
+
+        KE: KE {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings = <&kp K &kp E>;
+            label = "KE";
+        };
+
+        KO: KO {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings = <&kp K &kp O>;
+            label = "KO";
+        };
 
         // --- サ行 ---
-        SA: SA { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>; bindings = <&kp S &kp A>; label = "SA"; };
-        SI: SI { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>; bindings = <&kp S &kp I>; label = "SI"; };
-        SU: SU { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>; bindings = <&kp S &kp U>; label = "SU"; };
-        SE: SE { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>; bindings = <&kp S &kp E>; label = "SE"; };
-        SO: SO { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>; bindings = <&kp S &kp O>; label = "SO"; };
+
+        SA: SA {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings = <&kp S &kp A>;
+            label = "SA";
+        };
+
+        SI: SI {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings = <&kp S &kp I>;
+            label = "SI";
+        };
+
+        SU: SU {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings = <&kp S &kp U>;
+            label = "SU";
+        };
+
+        SE: SE {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings = <&kp S &kp E>;
+            label = "SE";
+        };
+
+        SO: SO {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings = <&kp S &kp O>;
+            label = "SO";
+        };
 
         // --- タ行 ---
-        TA: TA { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>; bindings = <&kp T &kp A>; label = "TA"; };
-        TI: TI { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>; bindings = <&kp T &kp I>; label = "TI"; };
-        TU: TU { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>; bindings = <&kp T &kp U>; label = "TU"; };
-        TE: TE { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>; bindings = <&kp T &kp E>; label = "TE"; };
-        TO: TO { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>; bindings = <&kp T &kp O>; label = "TO"; };
+
+        TA: TA {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings = <&kp T &kp A>;
+            label = "TA";
+        };
+
+        TI: TI {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings = <&kp T &kp I>;
+            label = "TI";
+        };
+
+        TU: TU {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings = <&kp T &kp U>;
+            label = "TU";
+        };
+
+        TE: TE {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings = <&kp T &kp E>;
+            label = "TE";
+        };
+
+        TO: TO {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings = <&kp T &kp O>;
+            label = "TO";
+        };
 
         // --- ナ行 ---
-        NA: NA { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>; bindings = <&kp N &kp A>; label = "NA"; };
-        NI: NI { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>; bindings = <&kp N &kp I>; label = "NI"; };
-        NU: NU { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>; bindings = <&kp N &kp U>; label = "NU"; };
-        NE: NE { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>; bindings = <&kp N &kp E>; label = "NE"; };
-        NO: NO { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>; bindings = <&kp N &kp O>; label = "NO"; };
+
+        NA: NA {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings = <&kp N &kp A>;
+            label = "NA";
+        };
+
+        NI: NI {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings = <&kp N &kp I>;
+            label = "NI";
+        };
+
+        NU: NU {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings = <&kp N &kp U>;
+            label = "NU";
+        };
+
+        NE: NE {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings = <&kp N &kp E>;
+            label = "NE";
+        };
+
+        NO: NO {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings = <&kp N &kp O>;
+            label = "NO";
+        };
 
         // --- ハ行 ---
-        HA: HA { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>; bindings = <&kp H &kp A>; label = "HA"; };
-        HI: HI { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>; bindings = <&kp H &kp I>; label = "HI"; };
-        HU: HU { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>; bindings = <&kp H &kp U>; label = "HU"; };
-        HE: HE { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>; bindings = <&kp H &kp E>; label = "HE"; };
-        HO: HO { compatible = "zmk,behavior-macro"; #binding-cells = <0>; wait-ms = <10>; tap-ms = <10>; bindings = <&kp H &kp O>; label = "HO"; };
+
+        HA: HA {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings = <&kp H &kp A>;
+            label = "HA";
+        };
+
+        HI: HI {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings = <&kp H &kp I>;
+            label = "HI";
+        };
+
+        HU: HU {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings = <&kp H &kp U>;
+            label = "HU";
+        };
+
+        HE: HE {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings = <&kp H &kp E>;
+            label = "HE";
+        };
+
+        HO: HO {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings = <&kp H &kp O>;
+            label = "HO";
+        };
 
         // 以下、スペース省略のため元のマクロ群がここにあるものとします。
         // （元のコードのマクロ群はシンタックスエラーは無いので、そのままここに含まれます）
@@ -97,10 +292,10 @@
 
         default_layer {
             bindings = <
-&kp B      &kp G  &kp D             &kp R          &kp Z       &trans    &kp COMMA    &kp U     &kp PERIOD  &kp C
-&kp H      &kp K  &kp T             &kp N          &kp S       &trans    &kp O        &kp A     &kp I       &kp E
-&kp P      &kp L  &kp W             &kp M          &kp F       &trans    &kp MINUS    &kp Y     &kp X       &kp V
-&kp LC(Z)  &kp J  &kp LEFT_CONTROL  &lt SYM SPACE  &kp RSHIFT  &kp BSPC  &lt NUM ENTER &kp LCMD &kp Q       &kp RC(Y)
+&kp B      &kp G  &kp D             &kp R          &kp Z       &trans    &kp COMMA      &kp U     &kp PERIOD  &kp C
+&kp H      &kp K  &kp T             &kp N          &kp S       &trans    &kp O          &kp A     &kp I       &kp E
+&kp P      &kp L  &kp W             &kp M          &kp F       &trans    &kp MINUS      &kp Y     &kp X       &kp V
+&kp LC(Z)  &kp J  &kp LEFT_CONTROL  &lt SYM SPACE  &kp RSHIFT  &kp BSPC  &lt NUM ENTER  &kp LCMD  &kp Q       &kp RC(Y)
             >;
         };
 
@@ -127,10 +322,10 @@
         layer3 {
             label = "MOUSE";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &kp C_AC_BACK  &mkp MB1  &mkp MB3  &mkp MB2  &kp C_AC_FORWARD
-&trans  &trans  &trans  &mo 7   &trans  &trans         &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans         &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans         &trans    &trans    &trans    &trans
+&trans  &trans  &trans  &trans     &trans  &kp C_AC_BACK  &mkp MB1  &mo 7     &mkp MB2  &kp C_AC_FORWARD
+&trans  &trans  &trans  &kp LCTRL  &trans  &trans         &trans    &mkp MB3  &trans    &trans
+&trans  &trans  &trans  &trans     &trans  &trans         &trans    &trans    &trans    &trans
+&trans  &trans  &trans  &trans     &trans  &trans         &trans    &trans    &trans    &trans
             >;
         };
 
