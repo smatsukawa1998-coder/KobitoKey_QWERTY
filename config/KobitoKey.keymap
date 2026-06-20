@@ -1914,10 +1914,10 @@
 
         default_layer {
             bindings = <
-&kp B      &kp G           &kp D             &kp R        &kp LEFT_ARROW  &kp RIGHT_ARROW  &kp BACKSPACE  &kp Y     &kp E             &kp Q
-&kp H      &kp K           &kp T             &kp N        &kp S           &kp C            &kp A          &kp I     &kp U             &kp V
-&kp P      &kp L           &kp W             &kp M        &kp F           &kp O            &kp PERIOD     &kp J     &kp X             &kp Z
-&kp LC(Z)  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &lt 2 SPACE  &kp SPACE       &kp BSPC         &lt 1 ENTER    &kp LCMD  &kp LEFT_CONTROL  &kp RC(Y)
+&kp B      &kp G           &kp D             &kp R        &kp LEFT_ARROW  &kp RIGHT_ARROW  &kp BACKSPACE  &kp Y     &kp E  &kp Q
+&kp H      &kp K           &kp T             &kp N        &kp S           &kp C            &kp A          &kp I     &kp U  &kp V
+&kp P      &kp L           &kp W             &kp M        &kp F           &kp O            &kp PERIOD     &kp J     &kp X  &kp Z
+&kp LC(Z)  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &lt 2 SPACE  &kp SPACE       &kp BSPC         &lt 1 ENTER    &kp LCMD  &mo 3  &kp RC(Y)
             >;
         };
 
@@ -1953,10 +1953,10 @@
 
         layer4 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &mkp MB1  &trans  &mkp MB2  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans    &trans
             >;
 
             label = "mouse delicate";
