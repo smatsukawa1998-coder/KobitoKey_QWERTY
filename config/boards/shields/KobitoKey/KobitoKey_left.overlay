@@ -53,7 +53,6 @@
         rotation-angle = <24>;
     };
 };
-
 &tb_left_listener {
     status = "okay";
     device = <&tb_left>;
@@ -64,13 +63,14 @@
             <&zip_xy_to_scroll_mapper>,
             <&zip_scroll_transform INPUT_TRANSFORM_Y_INVERT>,
             <&zip_scroll_transform INPUT_TRANSFORM_X_INVERT>;
-horizontal_scroll {
+
+    horizontal_scroll {
         layers = <4>;
         input-processors =
                 <&sensor_rotation_left>,
                 <&zip_x_scaler 0 1>,
                 <&zip_y_scaler 1 15>,
-                <&zip_xy_swap>,
+                <&zip_xy_transform INPUT_TRANSFORM_XY_SWAP>,
                 <&zip_xy_to_scroll_mapper>,
                 <&zip_scroll_transform INPUT_TRANSFORM_X_INVERT>;
     };
@@ -87,15 +87,15 @@ horizontal_scroll {
     smaller_dpi {
         layers = <4>;
         input-processors =
-        <&sensor_rotation_right>,
+            <&sensor_rotation_right>,
             <&zip_xy_scaler 1 4>;
     };
     change_layer {
         layers = <0>;
-        input-processors = 
+        input-processors =
             <&sensor_rotation_right>,
             <&zip_xy_scaler 1 1>,
-            <&zip_temp_layer 3 5000>; 
+            <&zip_temp_layer 3 5000>;
     };
     input-processors =
         <&sensor_rotation_right>,
@@ -109,4 +109,3 @@ horizontal_scroll {
         39
     >;
 };
-これでデバッグは完了していますか
