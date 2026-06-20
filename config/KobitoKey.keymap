@@ -1874,14 +1874,14 @@
         kanalayer: kana {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LANGUAGE_1 &to 5>;
+            bindings = <&kp LANGUAGE_1 &tog 5>;
             label = "KANA";
         };
 
         englayer: englayer {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LANGUAGE_2 &to 0>;
+            bindings = <&kp LANGUAGE_2 &tog 0>;
             label = "ENGLAYER";
         };
 
@@ -1944,10 +1944,10 @@
         layer3 {
             label = "MOUSE";
             bindings = <
-&trans  &trans  &trans     &trans  &trans     &mkp MB4  &mkp MB1          &mkp MB3        &mkp MB2  &mkp MB5
-&trans  &trans  &trans     &trans  &trans     &trans    &trans            &mo 4           &trans    &trans
-&trans  &trans  &trans     &trans  &trans     &trans    &trans            &trans          &trans    &trans
-&trans  &trans  &kp LC(Z)  &trans  &kp LC(Y)  &mo 4     &kp LEFT_CONTROL  &kp LEFT_SHIFT  &trans    &trans
+&trans  &trans  &trans     &trans  &trans     &mkp MB4  &mkp MB1   &mo 4           &mkp MB2  &mkp MB5
+&trans  &trans  &trans     &trans  &trans     &trans    &kp LCTRL  &mkp MB3        &trans    &trans
+&trans  &trans  &trans     &trans  &trans     &trans    &trans     &trans          &trans    &trans
+&trans  &trans  &kp LC(Z)  &trans  &kp LC(Y)  &trans    &trans     &kp LEFT_SHIFT  &trans    &trans
             >;
         };
 
