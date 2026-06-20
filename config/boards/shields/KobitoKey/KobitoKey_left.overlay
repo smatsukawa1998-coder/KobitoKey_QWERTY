@@ -67,7 +67,6 @@
     device = <&tb_left>;
 /* 通常時（Ctrlを押していないとき）の動作 */
     default_scroll {
-        layers = <3>; 
         input-processors =
             <&sensor_rotation_left>,
             <&zip_x_scaler 0 1>,
@@ -79,7 +78,7 @@
 
     /* 【追加】左Ctrlが押されている間の動作 */
     ctrl_horizontal_scroll {
-        modifiers = <MOD_LCTL　MOD_RCTL>; 
+        modifiers = <MOD_LCTL MOD_RCTL>; 
         
         input-processors =
             <&sensor_rotation_left>,
