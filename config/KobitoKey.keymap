@@ -507,7 +507,7 @@
         };
 
         bt {
-            bindings = <&mo 5>;
+            bindings = <&mo 4>;
             key-positions = <33 36>;
         };
     };
@@ -1790,7 +1790,7 @@
         englayer: englayer {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LANGUAGE_2 &tog 0>;
+            bindings = <&kp LANGUAGE_2 &tog 6>;
             label = "ENGLAYER";
         };
 
@@ -1809,16 +1809,27 @@
         };
     };
 
+    behaviors {
+        softoff: softoff {
+            compatible = "zmk,behavior-soft-off";
+            label = "SOFTOFF";
+            #binding-cells = <0>;
+            hold-time-ms = <2000>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
             bindings = <
-&kp B      &kp G  &kp D             &kp R        &kp Z       &trans    &kp COMMA    &kp U     &kp PERIOD  &kp C
-&kp H      &kp K  &kp T             &kp N        &kp S       &trans    &kp O        &kp A     &kp I       &kp E
-&kp P      &kp L  &kp W             &kp M        &kp F       &trans    &kp MINUS    &kp Y     &kp X       &kp V
-&kp LC(Z)  &kp J  &kp LEFT_CONTROL  &lt 2 SPACE  &kp RSHIFT  &kp BSPC  &lt 1 ENTER  &kp LCMD  &kp Q       &kp RC(Y)
+&mo 5      &KI     &TE               &SI          &kp LEFT_ARROW  &kp RIGHT        &kp BACKSPACE  &RU    &SU     &HE
+&RO        &KE     &TO               &KA          &LTU            &KU              &kp A          &kp I  &kp U   &kp MINUS
+&HO        &HI     &HA               &KO          &SO             &TA              &NA            &NN    &RA     &RE
+&kp LC(Z)  &trans  &kp LEFT_CONTROL  &lt 2 SPACE  &kp RSHIFT      &lt 4 BACKSPACE  &lt 1 ENTER    &mo 6  &trans  &kp RC(Y)
             >;
+
+            label = "kanaA";
         };
 
         layer1 {
@@ -1834,48 +1845,54 @@
         layer2 {
             label = "Symbol";
             bindings = <
-&kp AT_SIGN  &kp PERCENT  &kp ASTERISK      &kp SLASH             &kp PLUS   &kp CARET  &kp EXCLAMATION        &kp DOLLAR         &kp QUESTION  &kp INT_YEN
-&trans       &trans       &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS  &kp MINUS  &kp TILDE  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &trans        &trans
-&trans       &trans       &trans            &trans                &kp EQUAL  &trans     &trans                 &kp SEMICOLON      &kp COLON     &trans
-&trans       &trans       &trans            &trans                &trans     &kp BSLH   &kp EXCLAMATION        &kp QUESTION       &trans        &trans
+&kp AT_SIGN  &kp PERCENT  &kp LS(SQT)        &kp SLASH   &kp LS(SEMICOLON)  &kp CARET            &kp EXCLAMATION  &kp DOLLAR    &kp QUESTION  &kp INT_YEN
+&trans       &trans       &kp RIGHT_BRACKET  &kp LS(N8)  &kp MINUS          &kp EQUAL            &kp LS(N9)       &kp BSLH      &kp LS(N7)    &kp LS(NUMBER_2)
+&trans       &trans       &trans             &kp COMMA   &kp LS(MINUS)      &kp INTERNATIONAL_1  &kp PERIOD       &kp COMMA     &kp COLON     &kp SQT
+&trans       &trans       &trans             &trans      &trans             &kp BSLH             &kp EXCLAMATION  &kp QUESTION  &trans        &trans
             >;
         };
 
         layer3 {
             label = "MOUSE";
             bindings = <
-&trans  &trans  &trans     &trans  &trans     &mkp MB4  &mkp MB1  &mkp MB3  &mkp MB2  &mkp MB5
-&trans  &trans  &trans     &trans  &trans     &trans    &trans    &mkp MB3  &trans    &trans
-&trans  &trans  &trans     &trans  &trans     &trans    &trans    &trans    &trans    &trans
-&trans  &trans  &kp LC(Z)  &trans  &kp LC(Y)  &trans    &trans    &trans    &trans    &trans
+&trans  &trans  &trans     &trans     &trans     &mkp MB4  &mkp MB1  &mo 7     &mkp MB2  &mkp MB5
+&trans  &trans  &trans     &kp LCTRL  &trans     &trans    &trans    &mkp MB3  &trans    &trans
+&trans  &trans  &trans     &trans     &trans     &trans    &trans    &trans    &trans    &trans
+&trans  &trans  &kp LC(Z)  &trans     &kp LC(Y)  &trans    &trans    &trans    &trans    &trans
             >;
         };
 
-        layer_8 {
+        layer4 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &NU     &RI     &ME          &trans  &trans  &SA           &YO     &kp E   &YU
+&SE     &MI     &NI     &MA          &TI     &YA     &NO           &MO     &TU     &HU
+&trans  &trans  &WO     &commaenter  &MU     &kp O   &periodenter  &NE     &WA     &trans
+&trans  &trans  &trans  &trans       &trans  &trans  &trans        &trans  &trans  &trans
             >;
+
+            label = "kanaB";
         };
 
-        layer_5 {
+        layer5 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &LYO    &LE     &LYU
+&trans  &trans  &trans  &trans  &trans  &LYA    &LA     &LI     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &LO     &trans  &trans  &LWA    &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
+
+            label = "kana mini";
         };
 
-        layer_6 {
+        layer6 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp B   &kp G   &kp D   &kp R   &trans  &trans  &kp BSPC  &kp Y   &kp E   &kp Q
+&kp H   &kp K   &kp T   &kp N   &kp S   &kp C   &kp A     &kp I   &kp U   &kp V
+&kp P   &kp L   &kp W   &kp M   &kp F   &kp O   &kp DOT   &kp J   &kp X   &kp Z
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans
             >;
+
+            label = "eng";
         };
 
         layer_7 {
@@ -1889,13 +1906,15 @@
             label = "mouse delicate";
         };
 
-        layer_4 {
+        layer8 {
             bindings = <
-&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans  &trans  &trans  &trans  &trans
-&trans        &trans        &trans        &trans        &bt BT_CLR      &trans  &trans  &trans  &trans  &trans
-&trans        &trans        &trans        &trans        &bt BT_CLR_ALL  &trans  &trans  &trans  &trans  &trans
-&trans        &trans        &trans        &trans        &trans          &trans  &trans  &trans  &trans  &trans
+&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans  &trans  &softoff  &trans  &trans
+&trans        &trans        &trans        &trans        &bt BT_CLR      &trans  &trans  &trans    &trans  &trans
+&trans        &trans        &trans        &trans        &bt BT_CLR_ALL  &trans  &trans  &trans    &trans  &trans
+&trans        &trans        &trans        &trans        &trans          &trans  &trans  &trans    &trans  &trans
             >;
+
+            label = "bt&power";
         };
     };
 };
