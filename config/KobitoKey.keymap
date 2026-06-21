@@ -32,11 +32,6 @@
             bindings = <&kp TAB>;
         };
 
-        wn {
-            bindings = <&wn>;
-            key-positions = <17 18>;
-        };
-
         bt {
             bindings = <&mo 4>;
             key-positions = <33 36>;
