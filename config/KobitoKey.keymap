@@ -24,553 +24,474 @@
             bindings = <&GA>;
             key-positions = <13 16>;
             timeout-ms = <70>;
-            layers = <5>;
         };
 
         gi {
             bindings = <&GI>;
             key-positions = <16 1>;
             timeout-ms = <70>;
-            layers = <5>;
         };
 
         gu {
             bindings = <&GU>;
             key-positions = <15 13>;
             timeout-ms = <70>;
-            layers = <5>;
         };
 
         ge {
             bindings = <&GE>;
             key-positions = <11 16>;
             timeout-ms = <70>;
-            layers = <5>;
         };
 
         go {
             bindings = <&GO>;
             key-positions = <16 23>;
             timeout-ms = <70>;
-            layers = <5>;
         };
 
         za {
             bindings = <&ZA>;
             key-positions = <6 13>;
             timeout-ms = <70>;
-            layers = <5>;
         };
 
         zi {
             bindings = <&ZI>;
             key-positions = <3 16>;
             timeout-ms = <70>;
-            layers = <5>;
         };
 
         zu {
             bindings = <&ZU>;
             key-positions = <13 8>;
             timeout-ms = <70>;
-            layers = <5>;
         };
 
         ze {
             bindings = <&ZE>;
             key-positions = <10 16>;
             timeout-ms = <70>;
-            layers = <5>;
         };
 
         zo {
             bindings = <&ZO>;
             key-positions = <16 24>;
             timeout-ms = <70>;
-            layers = <5>;
         };
 
         da {
             bindings = <&DA>;
             key-positions = <13 25>;
             timeout-ms = <70>;
-            layers = <5>;
         };
 
         di {
             bindings = <&DI>;
             key-positions = <25 14>;
             timeout-ms = <70>;
-            layers = <5>;
         };
 
         du {
             bindings = <&DU>;
             key-positions = <13 19>;
             timeout-ms = <70>;
-            layers = <5>;
         };
 
         de {
             bindings = <&DE>;
             key-positions = <2 16>;
             timeout-ms = <70>;
-            layers = <5>;
         };
 
         do {
             bindings = <&DO>;
             key-positions = <12 16>;
             timeout-ms = <70>;
-            layers = <5>;
         };
 
         ba {
             bindings = <&BA_D>;
             key-positions = <16 22>;
             timeout-ms = <70>;
-            layers = <5>;
         };
 
         bi {
             bindings = <&BI_D>;
             key-positions = <16 21>;
             timeout-ms = <70>;
-            layers = <5>;
         };
 
         bu {
             bindings = <&BU_D>;
             key-positions = <28 13>;
             timeout-ms = <70>;
-            layers = <5>;
         };
 
         be {
             bindings = <&BE_D>;
             key-positions = <9 13>;
             timeout-ms = <70>;
-            layers = <5>;
         };
 
         bo {
             bindings = <&BO_D>;
             key-positions = <16 20>;
             timeout-ms = <70>;
-            layers = <5>;
         };
 
         pa {
             bindings = <&PA_P>;
             key-positions = <22 26>;
             timeout-ms = <70>;
-            layers = <5>;
         };
 
         pi {
             bindings = <&PI_P>;
             key-positions = <26 21>;
             timeout-ms = <70>;
-            layers = <5>;
         };
 
         pu {
             bindings = <&PU_P>;
             key-positions = <28 23>;
             timeout-ms = <70>;
-            layers = <5>;
         };
 
         pe {
             bindings = <&PE_P>;
             key-positions = <9 23>;
             timeout-ms = <70>;
-            layers = <5>;
         };
 
         po {
             bindings = <&PO_P>;
             key-positions = <26 20>;
             timeout-ms = <70>;
-            layers = <5>;
         };
 
         kya {
             bindings = <&KYA>;
             key-positions = <1 15>;
             timeout-ms = <70>;
-            layers = <5>;
         };
 
         kyu {
             bindings = <&KYU>;
             key-positions = <1 9>;
             timeout-ms = <70>;
-            layers = <5>;
         };
 
         kyo {
             bindings = <&KYO>;
             key-positions = <1 7>;
             timeout-ms = <70>;
-            layers = <5>;
         };
 
         sha {
             bindings = <&SHA>;
             key-positions = <3 15>;
             timeout-ms = <70>;
-            layers = <5>;
         };
 
         shu {
             bindings = <&SHU>;
             key-positions = <3 9>;
             timeout-ms = <70>;
-            layers = <5>;
         };
 
         sho {
             bindings = <&SHO>;
             key-positions = <7 3>;
             timeout-ms = <70>;
-            layers = <5>;
         };
 
         cha {
             bindings = <&CHA>;
             key-positions = <14 15>;
             timeout-ms = <70>;
-            layers = <5>;
         };
 
         chu {
             bindings = <&CHU>;
             key-positions = <14 9>;
             timeout-ms = <70>;
-            layers = <5>;
         };
 
         cho {
             bindings = <&CHO>;
             key-positions = <7 14>;
             timeout-ms = <70>;
-            layers = <5>;
         };
 
         nya {
             bindings = <&NYA>;
             key-positions = <12 15>;
             timeout-ms = <70>;
-            layers = <5>;
         };
 
         nyu {
             bindings = <&NYU>;
             key-positions = <12 9>;
             timeout-ms = <70>;
-            layers = <5>;
         };
 
         nyo {
             bindings = <&NYO>;
             key-positions = <7 12>;
             timeout-ms = <70>;
-            layers = <5>;
         };
 
         hya {
             bindings = <&HYA>;
             key-positions = <21 15>;
             timeout-ms = <70>;
-            layers = <5>;
         };
 
         hyu {
             bindings = <&HYU>;
             key-positions = <21 9>;
             timeout-ms = <70>;
-            layers = <5>;
         };
 
         hyo {
             bindings = <&HYO>;
             key-positions = <7 21>;
             timeout-ms = <70>;
-            layers = <5>;
         };
 
         mya {
             bindings = <&MYA>;
             key-positions = <24 15>;
             timeout-ms = <70>;
-            layers = <5>;
         };
 
         myu {
             bindings = <&MYU>;
             key-positions = <24 9>;
             timeout-ms = <70>;
-            layers = <5>;
         };
 
         myo {
             bindings = <&MYO>;
             key-positions = <7 24>;
             timeout-ms = <70>;
-            layers = <5>;
         };
 
         rya {
             bindings = <&RYA>;
             key-positions = <2 15>;
             timeout-ms = <70>;
-            layers = <5>;
         };
 
         ryu {
             bindings = <&RYU>;
             key-positions = <9 2>;
             timeout-ms = <70>;
-            layers = <5>;
         };
 
         ryo {
             bindings = <&RYO>;
             key-positions = <7 2>;
             timeout-ms = <70>;
-            layers = <5>;
         };
 
         gya {
             bindings = <&GYA>;
             key-positions = <16 15 1>;
             timeout-ms = <70>;
-            layers = <5>;
         };
 
         gyu {
             bindings = <&GYU>;
             key-positions = <1 9 16>;
             timeout-ms = <70>;
-            layers = <5>;
         };
 
         gyo {
             bindings = <&GYO>;
             key-positions = <1 16 7>;
             timeout-ms = <70>;
-            layers = <5>;
         };
 
         ja {
             bindings = <&JA>;
             key-positions = <16 3 15>;
             timeout-ms = <70>;
-            layers = <5>;
         };
 
         ju {
             bindings = <&JU>;
             key-positions = <16 3 9>;
             timeout-ms = <70>;
-            layers = <5>;
         };
 
         jo {
             bindings = <&JO>;
             key-positions = <16 3 7>;
             timeout-ms = <70>;
-            layers = <5>;
         };
 
         bya {
             bindings = <&BYA>;
             key-positions = <16 21 15>;
             timeout-ms = <70>;
-            layers = <5>;
         };
 
         byu {
             bindings = <&BYU>;
             key-positions = <16 21 9>;
             timeout-ms = <70>;
-            layers = <5>;
         };
 
         byo {
             bindings = <&BYO>;
             key-positions = <16 7 21>;
             timeout-ms = <70>;
-            layers = <5>;
         };
 
         pya {
             bindings = <&PYA>;
             key-positions = <21 26 15>;
             timeout-ms = <70>;
-            layers = <5>;
         };
 
         pyu {
             bindings = <&PYU>;
             key-positions = <21 26 9>;
             timeout-ms = <70>;
-            layers = <5>;
         };
 
         pyo {
             bindings = <&PYO>;
             key-positions = <21 26 7>;
             timeout-ms = <70>;
-            layers = <5>;
         };
 
         vu {
             bindings = <&VU>;
             key-positions = <21 18 19>;
             timeout-ms = <70>;
-            layers = <5>;
         };
 
         va {
             bindings = <&VA>;
             key-positions = <13 18 16>;
             timeout-ms = <70>;
-            layers = <5>;
         };
 
         vi {
             bindings = <&VI>;
             key-positions = <18 13 17>;
             timeout-ms = <70>;
-            layers = <5>;
         };
 
         ve {
             bindings = <&VE>;
             key-positions = <13 8 18>;
             timeout-ms = <70>;
-            layers = <5>;
         };
 
         vo {
             bindings = <&VO>;
             key-positions = <13 18 25>;
             timeout-ms = <70>;
-            layers = <5>;
         };
 
         thi {
             bindings = <&THI>;
             key-positions = <2 17 26>;
             timeout-ms = <70>;
-            layers = <5>;
         };
 
         twu {
             bindings = <&TWU>;
             key-positions = <2 26 26 18>;
             timeout-ms = <70>;
-            layers = <5>;
         };
 
         dhi {
             bindings = <&DHI>;
             key-positions = <16 17 2>;
             timeout-ms = <70>;
-            layers = <5>;
         };
 
         dwu {
             bindings = <&DWU>;
             key-positions = <18 16 16 16 16 16 2>;
             timeout-ms = <70>;
-            layers = <5>;
         };
 
         fa {
             bindings = <&FA>;
             key-positions = <16 19>;
             timeout-ms = <70>;
-            layers = <5>;
         };
 
         fi {
             bindings = <&FI>;
             key-positions = <19 17>;
             timeout-ms = <70>;
-            layers = <5>;
         };
 
         fe {
             bindings = <&FE>;
             key-positions = <8 19>;
             timeout-ms = <70>;
-            layers = <5>;
         };
 
         fo {
             bindings = <&FO>;
             key-positions = <19 25>;
             timeout-ms = <70>;
-            layers = <5>;
         };
 
         che {
             bindings = <&CHE>;
             key-positions = <14 8>;
             timeout-ms = <70>;
-            layers = <5>;
         };
 
         she {
             bindings = <&SHE_EX>;
             key-positions = <8 3>;
             timeout-ms = <70>;
-            layers = <5>;
         };
 
         je {
             bindings = <&JE>;
             key-positions = <19 3 16>;
             timeout-ms = <70>;
-            layers = <5>;
         };
 
         wi {
             bindings = <&WI>;
             key-positions = <17 18 18>;
             timeout-ms = <70>;
-            layers = <5>;
         };
 
         we {
             bindings = <&WE>;
             key-positions = <8 18>;
             timeout-ms = <70>;
-            layers = <5>;
         };
 
         who {
             bindings = <&WHO>;
             key-positions = <18 25>;
             timeout-ms = <70>;
-            layers = <5>;
         };
 
         qa {
             bindings = <&QA>;
             key-positions = <15 16>;
             timeout-ms = <70>;
-            layers = <5>;
         };
 
         tsa {
             bindings = <&TSA>;
             key-positions = <16 16 18>;
             timeout-ms = <70>;
-            layers = <5>;
         };
 
         combo_esc {
@@ -586,18 +507,19 @@
         };
 
         bt {
-            bindings = <&mo 4>;
+            bindings = <&mo 5>;
             key-positions = <33 36>;
         };
     };
 
     macros {
-      w0: w0 {
+        w0: w0 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp N0 &kp N0>;
             label = "W0";
         };
+
         // --- カ行 ---
 
         KA: KA {
@@ -1861,7 +1783,7 @@
         kanalayer: kana {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LANGUAGE_1 &tog 5>;
+            bindings = <&kp LANGUAGE_1 &tog 0>;
             label = "KANA";
         };
 
@@ -1892,9 +1814,9 @@
 
         default_layer {
             bindings = <
-&kp B      &kp G  &kp D             &kp R        &kp Z       &trans       &kp COMMA    &kp U     &kp PERIOD  &kp C
-&kp H      &kp K  &kp T             &kp N        &kp S       &trans       &kp O        &kp A     &kp I       &kp E
-&kp P      &kp L  &kp W             &kp M        &kp F       &trans       &kp MINUS    &kp Y     &kp X       &kp V
+&kp B      &kp G  &kp D             &kp R        &kp Z       &trans    &kp COMMA    &kp U     &kp PERIOD  &kp C
+&kp H      &kp K  &kp T             &kp N        &kp S       &trans    &kp O        &kp A     &kp I       &kp E
+&kp P      &kp L  &kp W             &kp M        &kp F       &trans    &kp MINUS    &kp Y     &kp X       &kp V
 &kp LC(Z)  &kp J  &kp LEFT_CONTROL  &lt 2 SPACE  &kp RSHIFT  &kp BSPC  &lt 1 ENTER  &kp LCMD  &kp Q       &kp RC(Y)
             >;
         };
@@ -1923,10 +1845,48 @@
             label = "MOUSE";
             bindings = <
 &trans  &trans  &trans     &trans  &trans     &mkp MB4  &mkp MB1  &mkp MB3  &mkp MB2  &mkp MB5
-&trans  &trans  &trans     &trans  &trans     &trans    &trans    &trans    &trans    &trans
+&trans  &trans  &trans     &trans  &trans     &trans    &trans    &mkp MB3  &trans    &trans
 &trans  &trans  &trans     &trans  &trans     &trans    &trans    &trans    &trans    &trans
 &trans  &trans  &kp LC(Z)  &trans  &kp LC(Y)  &trans    &trans    &trans    &trans    &trans
             >;
+        };
+
+        layer_8 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        layer_5 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        layer_6 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        layer_7 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+
+            label = "mouse delicate";
         };
 
         layer_4 {
