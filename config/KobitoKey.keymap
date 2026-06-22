@@ -1920,64 +1920,14 @@
     conditional_layers {
         compatible = "zmk,conditional-layers";
 
-        free5 {
-            if-layers = <0>;
-            then-layer = <5>;
-        };
-
-        free6 {
-            if-layers = <0>;
-            then-layer = <6>;
-        };
-
-        free4 {
-            if-layers = <0>;
-            then-layer = <4>;
-        };
-
         free3 {
             if-layers = <0>;
             then-layer = <3>;
         };
 
-        free2 {
-            if-layers = <0>;
-            then-layer = <2>;
-        };
-
-        free7 {
-            if-layers = <0>;
-            then-layer = <7>;
-        };
-
-        free8 {
-            if-layers = <0>;
-            then-layer = <8>;
-        };
-
-        free12 {
-            if-layers = <1>;
-            then-layer = <5>;
-        };
-
-        free11 {
-            if-layers = <1>;
-            then-layer = <4>;
-        };
-
         free10 {
             if-layers = <1>;
             then-layer = <3>;
-        };
-
-        free9 {
-            if-layers = <1>;
-            then-layer = <2>;
-        };
-
-        free13 {
-            if-layers = <1>;
-            then-layer = <8>;
         };
     };
 };
