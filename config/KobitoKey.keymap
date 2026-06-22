@@ -501,7 +501,7 @@
         };
 
         bt {
-            bindings = <&mo 7>;
+            bindings = <&mo 8>;
             key-positions = <33 36>;
         };
 
