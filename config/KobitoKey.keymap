@@ -1803,7 +1803,7 @@
         periodenter: period {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp PERIOD &kp ENTER>;
+            bindings = <&kp DOT  &kp ENTER>;
             label = "PERIOD";
         };
     };
