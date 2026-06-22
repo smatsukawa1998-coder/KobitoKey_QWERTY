@@ -1856,7 +1856,7 @@
         layer3 {
             label = "MOUSE";
             bindings = <
-&trans  &trans  &trans     &trans     &trans     &mkp MB4  &mkp MB1  &lt 2 SPACE  &mkp MB2  &mkp MB5
+&trans  &trans  &trans     &trans     &trans     &kp C_AC_BACK  &mkp MB1  &lt 2 SPACE  &mkp MB2  &kp C_AC_FORWORD
 &trans  &trans  &trans     &kp LCTRL  &trans     &trans    &trans    &mkp MB3     &trans    &trans
 &trans  &trans  &trans     &trans     &trans     &trans    &trans    &trans       &trans    &trans
 &trans  &trans  &kp LC(Z)  &trans     &kp LC(Y)  &trans    &trans    &trans       &trans    &trans
