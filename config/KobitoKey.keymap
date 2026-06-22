@@ -1886,7 +1886,7 @@
         layer6 {
             bindings = <
 &trans  &MU     &RI     &NU          &trans  &trans  &SA           &YO     &kp E   &YU
-&SE     &ME     &NI     &MA          &TI     &YA     &NO           &MO     &WO     &TU
+&SE     &ME     &NI     &MA          &TI     &YA     &NO           &MO     &WA     &TU
 &trans  &trans  &WO     &commaenter  &MI     &kp O   &periodenter  &NE     &HU     &trans
 &trans  &trans  &trans  &trans       &trans  &trans  &trans        &trans  &trans  &trans
             >;
