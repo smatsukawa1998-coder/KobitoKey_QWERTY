@@ -11,13 +11,13 @@
         combo_eisu {
             timeout-ms = <50>;
             key-positions = <12 13>;
-            bindings = <&kp LANG2>;
+            bindings = <&englayer>;
         };
 
         combo_kana {
             timeout-ms = <50>;
             key-positions = <16 17>;
-            bindings = <&kp LANG1>;
+            bindings = <&kanalayer>;
         };
 
         ga {
@@ -424,25 +424,25 @@
 
         fa {
             bindings = <&FA>;
-            key-positions = <16 19>;
+            key-positions = <16 28>;
             timeout-ms = <70>;
         };
 
         fi {
             bindings = <&FI>;
-            key-positions = <19 17>;
+            key-positions = <17 28>;
             timeout-ms = <70>;
         };
 
         fe {
             bindings = <&FE>;
-            key-positions = <8 19>;
+            key-positions = <8 28>;
             timeout-ms = <70>;
         };
 
         fo {
             bindings = <&FO>;
-            key-positions = <19 25>;
+            key-positions = <25 28>;
             timeout-ms = <70>;
         };
 
@@ -488,12 +488,6 @@
             timeout-ms = <70>;
         };
 
-        tsa {
-            bindings = <&TSA>;
-            key-positions = <16 16 18>;
-            timeout-ms = <70>;
-        };
-
         combo_esc {
             timeout-ms = <50>;
             key-positions = <0 1>;
@@ -507,8 +501,13 @@
         };
 
         bt {
-            bindings = <&mo 4>;
+            bindings = <&mo 7>;
             key-positions = <33 36>;
+        };
+
+        tsa {
+            bindings = <&TSA>;
+            key-positions = <16 19>;
         };
     };
 
@@ -1823,26 +1822,58 @@
 
         default_layer {
             bindings = <
-&mo 5      &KI        &TE               &SI          &kp LEFT_ARROW  &kp RIGHT        &kp BACKSPACE  &RU             &SU     &HE
-&RO        &KE        &TO               &KA          &LTU            &KU              &kp A          &kp I           &kp U   &kp MINUS
-&HO        &HI        &HA               &KO          &SO             &TA              &NA            &NN             &RA     &RE
-&kp LC(Z)  &englayer  &kp LEFT_CONTROL  &lt 2 SPACE  &mo 4           &lt 4 BACKSPACE  &lt 1 ENTER    &kp LEFT_SHIFT  &trans  &kp RC(Y)
+&mo 7      &KI     &TE               &SI          &kp LEFT_ARROW  &kp RIGHT        &kp BACKSPACE  &RU             &SU     &HE
+&RO        &KE     &TO               &KA          &LTU            &KU              &kp A          &kp I           &kp U   &kp MINUS
+&HO        &HI     &HA               &KO          &SO             &TA              &NA            &NN             &RA     &RE
+&kp LC(Z)  &trans  &kp LEFT_CONTROL  &lt 5 SPACE  &lt 6 SPACE     &lt 6 BACKSPACE  &lt 4 ENTER    &kp LEFT_SHIFT  &trans  &kp RC(Y)
             >;
 
             label = "kanaA";
         };
 
         layer1 {
+            bindings = <
+&kp B   &kp G   &kp D             &kp R        &trans  &trans  &kp BSPC     &kp Y            &kp E   &kp Q
+&kp H   &kp K   &kp T             &kp N        &kp S   &kp C   &kp A        &kp I            &kp U   &kp V
+&kp P   &kp L   &kp W             &kp M        &kp F   &kp O   &kp DOT      &kp J            &kp X   &kp Z
+&trans  &trans  &kp LEFT_CONTROL  &lt 5 SPACE  &trans  &trans  &lt 4 ENTER  &kp RIGHT_SHIFT  &trans  &trans
+            >;
+
+            label = "eng";
+        };
+
+        layer2 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+
+            label = "mouse delicate";
+        };
+
+        layer3 {
+            label = "MOUSE";
+            bindings = <
+&trans  &trans  &trans     &trans     &trans     &mkp MB4  &mkp MB1  &mo 2     &mkp MB2  &mkp MB5
+&trans  &trans  &trans     &kp LCTRL  &trans     &trans    &trans    &mkp MB3  &trans    &trans
+&trans  &trans  &trans     &trans     &trans     &trans    &trans    &trans    &trans    &trans
+&trans  &trans  &kp LC(Z)  &trans     &kp LC(Y)  &trans    &trans    &trans    &trans    &trans
+            >;
+        };
+
+        layer4 {
             label = "NUMBER";
             bindings = <
 &trans  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp PLUS    &trans  &trans    &kp UP    &trans     &trans
 &trans  &kp N4        &kp N5        &kp N6        &kp MINUS   &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans
-&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp EQUAL   &trans  &trans    &trans    &trans     &trans
+&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp EQUAL   &trans  &kp F7    &kp F8    &trans     &trans
 &trans  &trans        &kp N0        &w0           &kp PERIOD  &trans  &trans    &trans    &trans     &trans
             >;
         };
 
-        layer2 {
+        layer5 {
             label = "Symbol";
             bindings = <
 &kp AT_SIGN  &kp PERCENT  &kp LS(SQT)        &kp SLASH   &kp LS(SEMICOLON)  &kp CARET            &kp EXCLAMATION  &kp DOLLAR    &kp QUESTION  &kp INT_YEN
@@ -1852,28 +1883,18 @@
             >;
         };
 
-        layer3 {
-            label = "MOUSE";
+        layer6 {
             bindings = <
-&trans  &trans  &trans     &trans     &trans     &mkp MB4  &mkp MB1  &mo 7     &mkp MB2  &mkp MB5
-&trans  &trans  &trans     &kp LCTRL  &trans     &trans    &trans    &mkp MB3  &trans    &trans
-&trans  &trans  &trans     &trans     &trans     &trans    &trans    &trans    &trans    &trans
-&trans  &trans  &kp LC(Z)  &trans     &kp LC(Y)  &trans    &trans    &trans    &trans    &trans
-            >;
-        };
-
-        layer4 {
-            bindings = <
-&trans  &NU     &RI     &ME          &trans  &trans  &SA           &YO     &kp E   &YU
-&SE     &MI     &NI     &MA          &TI     &YA     &NO           &MO     &TU     &HU
-&trans  &trans  &WO     &commaenter  &MU     &kp O   &periodenter  &NE     &WA     &trans
+&trans  &MU     &RI     &NU          &trans  &trans  &SA           &YO     &kp E   &YU
+&SE     &ME     &NI     &MA          &TI     &YA     &NO           &MO     &WO     &TU
+&trans  &trans  &WO     &commaenter  &MI     &kp O   &periodenter  &NE     &HU     &trans
 &trans  &trans  &trans  &trans       &trans  &trans  &trans        &trans  &trans  &trans
             >;
 
             label = "kanaB";
         };
 
-        layer5 {
+        layer7 {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &LYO    &LE     &LYU
 &trans  &trans  &trans  &trans  &trans  &LYA    &LA     &LI     &LU     &trans
@@ -1882,28 +1903,6 @@
             >;
 
             label = "kana mini";
-        };
-
-        layer6 {
-            bindings = <
-&kp B   &kp G   &kp D   &kp R   &trans  &trans  &kp BSPC  &kp Y   &kp E   &kp Q
-&kp H   &kp K   &kp T   &kp N   &kp S   &kp C   &kp A     &kp I   &kp U   &kp V
-&kp P   &kp L   &kp W   &kp M   &kp F   &kp O   &kp DOT   &kp J   &kp X   &kp Z
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans
-            >;
-
-            label = "eng";
-        };
-
-        layer_7 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-            >;
-
-            label = "mouse delicate";
         };
 
         layer8 {
@@ -1915,6 +1914,45 @@
             >;
 
             label = "bt&power";
+        };
+    };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        free5 {
+            if-layers = <0 1>;
+            then-layer = <5>;
+        };
+
+        free6 {
+            if-layers = <0>;
+            then-layer = <6>;
+        };
+
+        free4 {
+            if-layers = <0 1>;
+            then-layer = <4>;
+        };
+
+        free3 {
+            if-layers = <0 1>;
+            then-layer = <3>;
+        };
+
+        free2 {
+            if-layers = <0 1>;
+            then-layer = <2>;
+        };
+
+        free7 {
+            if-layers = <0>;
+            then-layer = <7>;
+        };
+
+        free {
+            if-layers = <0 1>;
+            then-layer = <8>;
         };
     };
 };
