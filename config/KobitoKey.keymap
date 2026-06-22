@@ -1789,7 +1789,7 @@
         englayer: englayer {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LANGUAGE_2 &tog 6>;
+            bindings = <&kp LANGUAGE_2 &tog 1>;
             label = "ENGLAYER";
         };
 
@@ -1822,10 +1822,10 @@
 
         default_layer {
             bindings = <
-&mo 7      &KI     &TE               &SI          &kp LEFT_ARROW  &kp RIGHT        &kp BACKSPACE  &RU             &SU     &HE
-&RO        &KE     &TO               &KA          &LTU            &KU              &kp A          &kp I           &kp U   &kp MINUS
-&HO        &HI     &HA               &KO          &SO             &TA              &NA            &NN             &RA     &RE
-&kp LC(Z)  &trans  &kp LEFT_CONTROL  &lt 5 SPACE  &lt 6 SPACE     &lt 6 BACKSPACE  &lt 4 ENTER    &kp LEFT_SHIFT  &trans  &kp RC(Y)
+&mo 7      &KI               &TE               &SI          &kp LEFT_ARROW  &kp RIGHT        &kp BACKSPACE  &RU             &SU              &HE
+&RO        &KE               &TO               &KA          &LTU            &KU              &kp A          &kp I           &kp U            &kp MINUS
+&HO        &HI               &HA               &KO          &SO             &TA              &NA            &NN             &RA              &RE
+&kp LC(Z)  &msc MOVE_X(-10)  &kp LEFT_CONTROL  &lt 5 SPACE  &lt 6 SPACE     &lt 6 BACKSPACE  &lt 4 ENTER    &kp LEFT_SHIFT  &msc MOVE_Y(10)  &kp RC(Y)
             >;
 
             label = "kanaA";
