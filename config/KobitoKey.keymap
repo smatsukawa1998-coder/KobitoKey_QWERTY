@@ -1782,14 +1782,14 @@
         kanalayer: kana {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LANGUAGE_1 &tog 0>;
+            bindings = <&kp LANGUAGE_1 &to 0>;
             label = "KANA";
         };
 
         englayer: englayer {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LANGUAGE_2 &tog 1>;
+            bindings = <&kp LANGUAGE_2 &to 1>;
             label = "ENGLAYER";
         };
 
