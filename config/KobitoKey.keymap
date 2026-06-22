@@ -262,19 +262,19 @@
 
         mya {
             bindings = <&MYA>;
-            key-positions = <24 15>;
+            key-positions = <15 11>;
             timeout-ms = <70>;
         };
 
         myu {
             bindings = <&MYU>;
-            key-positions = <24 9>;
+            key-positions = <9 11>;
             timeout-ms = <70>;
         };
 
         myo {
             bindings = <&MYO>;
-            key-positions = <7 24>;
+            key-positions = <7 11>;
             timeout-ms = <70>;
         };
 
@@ -370,7 +370,7 @@
 
         vu {
             bindings = <&VU>;
-            key-positions = <21 18 19>;
+            key-positions = <18 13>;
             timeout-ms = <70>;
         };
 
@@ -400,13 +400,13 @@
 
         thi {
             bindings = <&THI>;
-            key-positions = <2 17 26>;
+            key-positions = <2 17>;
             timeout-ms = <70>;
         };
 
         twu {
             bindings = <&TWU>;
-            key-positions = <2 26 26 18>;
+            key-positions = <2 18>;
             timeout-ms = <70>;
         };
 
@@ -460,13 +460,13 @@
 
         je {
             bindings = <&JE>;
-            key-positions = <19 3 16>;
+            key-positions = <3 16 8>;
             timeout-ms = <70>;
         };
 
         wi {
             bindings = <&WI>;
-            key-positions = <17 18 18>;
+            key-positions = <17 18>;
             timeout-ms = <70>;
         };
 
@@ -1823,10 +1823,10 @@
 
         default_layer {
             bindings = <
-&mo 5      &KI     &TE               &SI          &kp LEFT_ARROW  &kp RIGHT        &kp BACKSPACE  &RU    &SU     &HE
-&RO        &KE     &TO               &KA          &LTU            &KU              &kp A          &kp I  &kp U   &kp MINUS
-&HO        &HI     &HA               &KO          &SO             &TA              &NA            &NN    &RA     &RE
-&kp LC(Z)  &trans  &kp LEFT_CONTROL  &lt 2 SPACE  &kp RSHIFT      &lt 4 BACKSPACE  &lt 1 ENTER    &mo 6  &trans  &kp RC(Y)
+&mo 5      &KI        &TE               &SI          &kp LEFT_ARROW  &kp RIGHT        &kp BACKSPACE  &RU             &SU     &HE
+&RO        &KE        &TO               &KA          &LTU            &KU              &kp A          &kp I           &kp U   &kp MINUS
+&HO        &HI        &HA               &KO          &SO             &TA              &NA            &NN             &RA     &RE
+&kp LC(Z)  &englayer  &kp LEFT_CONTROL  &lt 2 SPACE  &mo 4           &lt 4 BACKSPACE  &lt 1 ENTER    &kp LEFT_SHIFT  &trans  &kp RC(Y)
             >;
 
             label = "kanaA";
@@ -1876,7 +1876,7 @@
         layer5 {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &LYO    &LE     &LYU
-&trans  &trans  &trans  &trans  &trans  &LYA    &LA     &LI     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &LYA    &LA     &LI     &LU     &trans
 &trans  &trans  &trans  &trans  &trans  &LO     &trans  &trans  &LWA    &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
