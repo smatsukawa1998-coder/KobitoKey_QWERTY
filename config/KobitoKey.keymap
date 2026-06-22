@@ -1915,6 +1915,17 @@
 
             label = "bt&power";
         };
+
+        layer9 {
+            bindings = <
+&none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none  &none  &none  &none
+            >;
+
+            label = "lock";
+        };
     };
 
     conditional_layers { compatible = "zmk,conditional-layers"; };
