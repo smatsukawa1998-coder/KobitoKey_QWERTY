@@ -87,7 +87,7 @@
     status = "okay";
 
     smaller_dpi {
-        layers = <4>;
+        layers = <2>;
         input-processors =
         <&sensor_rotation_right>,
             <&zip_xy_scaler 1 4>;
