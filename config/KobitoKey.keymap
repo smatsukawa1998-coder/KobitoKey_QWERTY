@@ -1825,7 +1825,7 @@
 &mo 7      &KI               &TE               &SI          &kp LEFT_ARROW  &kp RIGHT        &kp BACKSPACE  &RU             &SU              &HE
 &RO        &KE               &TO               &KA          &LTU            &KU              &kp A          &kp I           &kp U            &kp MINUS
 &HO        &HI               &HA               &KO          &SO             &TA              &NA            &NN             &RA              &RE
-&kp LC(Z)  &msc MOVE_X(-10)  &kp LEFT_CONTROL  &lt 5 SPACE  &lt 6 SPACE     &lt 6 BACKSPACE  &lt 4 ENTER    &kp LEFT_SHIFT  &msc MOVE_Y(10)  &kp RC(Y)
+&kp LC(Z)  &msc SCRL_LEFT  &kp LEFT_CONTROL  &lt 5 SPACE  &lt 6 SPACE     &lt 6 BACKSPACE  &lt 4 ENTER    &kp LEFT_SHIFT  &msc SCRL_RIGHT  &kp RC(Y)
             >;
 
             label = "kanaA";
