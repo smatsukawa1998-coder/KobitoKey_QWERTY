@@ -94,7 +94,7 @@
 
         du {
             bindings = <&DU>;
-            key-positions = <13 19>;
+            key-positions = <13 18>;
             timeout-ms = <70>;
         };
 
@@ -370,7 +370,7 @@
 
         vu {
             bindings = <&VU>;
-            key-positions = <18 13>;
+            key-positions = <18 13 19>;
             timeout-ms = <70>;
         };
 
