@@ -88,7 +88,7 @@
 
         di {
             bindings = <&DI>;
-            key-positions = <25 14>;
+            key-positions = <14 16>;
             timeout-ms = <70>;
         };
 
