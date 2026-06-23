@@ -124,7 +124,7 @@
 
         bu {
             bindings = <&BU_D>;
-            key-positions = <28 13>;
+            key-positions = <13 19>;
             timeout-ms = <70>;
         };
 
@@ -154,7 +154,7 @@
 
         pu {
             bindings = <&PU_P>;
-            key-positions = <28 23>;
+            key-positions = <23 19>;
             timeout-ms = <70>;
         };
 
@@ -424,25 +424,25 @@
 
         fa {
             bindings = <&FA>;
-            key-positions = <16 28>;
+            key-positions = <16 19>;
             timeout-ms = <70>;
         };
 
         fi {
             bindings = <&FI>;
-            key-positions = <17 28>;
+            key-positions = <17 19>;
             timeout-ms = <70>;
         };
 
         fe {
             bindings = <&FE>;
-            key-positions = <8 28>;
+            key-positions = <8 19>;
             timeout-ms = <70>;
         };
 
         fo {
             bindings = <&FO>;
-            key-positions = <25 28>;
+            key-positions = <25 19>;
             timeout-ms = <70>;
         };
 
@@ -503,11 +503,6 @@
         bt {
             bindings = <&mo 8>;
             key-positions = <33 36>;
-        };
-
-        tsa {
-            bindings = <&TSA>;
-            key-positions = <16 19>;
         };
     };
 
@@ -1822,10 +1817,10 @@
 
         default_layer {
             bindings = <
-&mo 7      &KI             &TE               &SI          &kp LEFT_ARROW  &kp RIGHT        &kp BACKSPACE  &RU             &SU              &HE
-&RO        &KE             &TO               &KA          &LTU            &KU              &kp A          &kp I           &kp U            &kp MINUS
-&HO        &HI             &HA               &KO          &SO             &TA              &NA            &NN             &RA              &RE
-&kp LC(Z)  &msc SCRL_LEFT  &kp LEFT_CONTROL  &lt 5 SPACE  &lt 6 SPACE     &lt 6 BACKSPACE  &lt 4 ENTER    &kp LEFT_SHIFT  &msc SCRL_RIGHT  &kp RC(Y)
+&mo 7      &KI             &TE          &SI          &kp LEFT_ARROW  &kp RIGHT            &kp BACKSPACE  &RU          &SU              &HE
+&RO        &KE             &TO          &KA          &LTU            &KU                  &kp A          &kp I        &kp U            &kp MINUS
+&HO        &HI             &HA          &KO          &SO             &TA                  &NA            &NN          &RA              &RE
+&kp LC(Z)  &msc SCRL_LEFT  &lt 6 SPACE  &lt 4 SPACE  &kp LEFT_SHIFT  &mt RCTRL BACKSPACE  &lt 5 ENTER    &lt 6 ENTER  &msc SCRL_RIGHT  &kp RC(Y)
             >;
 
             label = "kanaA";
@@ -1833,10 +1828,10 @@
 
         layer1 {
             bindings = <
-&kp B   &kp G   &kp D             &kp R        &trans  &trans  &kp BSPC     &kp Y            &kp E   &kp Q
-&kp H   &kp K   &kp T             &kp N        &kp S   &kp C   &kp A        &kp I            &kp U   &kp V
-&kp P   &kp L   &kp W             &kp M        &kp F   &kp O   &kp DOT      &kp J            &kp X   &kp Z
-&trans  &trans  &kp LEFT_CONTROL  &lt 5 SPACE  &trans  &trans  &lt 4 ENTER  &kp RIGHT_SHIFT  &trans  &trans
+&kp B   &kp G   &kp D      &kp R        &trans  &trans  &kp BSPC     &kp Y         &kp E   &kp Q
+&kp H   &kp K   &kp T      &kp N        &kp S   &kp C   &kp A        &kp I         &kp U   &kp V
+&kp P   &kp L   &kp W      &kp M        &kp F   &kp O   &kp DOT      &kp J         &kp X   &kp Z
+&trans  &trans  &kp LCTRL  &lt 4 SPACE  &trans  &trans  &lt 5 ENTER  &kp LEFT_WIN  &trans  &trans
             >;
 
             label = "eng";
@@ -1863,16 +1858,6 @@
             >;
         };
 
-        layer4 {
-            label = "NUMBER";
-            bindings = <
-&trans  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp PLUS    &trans  &trans    &kp UP    &trans     &trans
-&trans  &kp N4        &kp N5        &kp N6        &kp MINUS   &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans
-&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp EQUAL   &trans  &kp F7    &kp F8    &trans     &trans
-&trans  &trans        &kp N0        &w0           &kp PERIOD  &trans  &trans    &trans    &trans     &trans
-            >;
-        };
-
         layer5 {
             label = "Symbol";
             bindings = <
@@ -1883,11 +1868,21 @@
             >;
         };
 
+        layer4 {
+            label = "NUMBER";
+            bindings = <
+&trans  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp PLUS    &trans  &trans    &kp UP    &trans     &trans
+&trans  &kp N4        &kp N5        &kp N6        &kp MINUS   &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans
+&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp EQUAL   &trans  &kp F7    &kp F8    &trans     &trans
+&trans  &trans        &kp N0        &w0           &kp PERIOD  &trans  &trans    &trans    &trans     &trans
+            >;
+        };
+
         layer6 {
             bindings = <
-&trans  &MU     &RI     &NU          &trans  &trans  &SA           &YO     &kp E   &YU
-&SE     &ME     &NI     &MA          &TI     &YA     &NO           &MO     &WA     &TU
-&trans  &trans  &WO     &commaenter  &MI     &kp O   &periodenter  &NE     &HU     &trans
+&trans  &ME     &RI     &NE          &trans  &trans  &SA           &YO     &kp E   &YU
+&SE     &MI     &NI     &MA          &TI     &YA     &NO           &MO     &TU     &HU
+&trans  &trans  &WO     &commaenter  &NU     &kp O   &periodenter  &MU     &WA     &trans
 &trans  &trans  &trans  &trans       &trans  &trans  &trans        &trans  &trans  &trans
             >;
 
