@@ -1828,9 +1828,9 @@
 
         layer1 {
             bindings = <
-&kp B   &kp G   &kp D      &kp R        &trans  &trans  &kp BSPC     &kp Y         &kp E   &kp Q
-&kp H   &kp K   &kp T      &kp N        &kp S   &kp C   &kp A        &kp I         &kp U   &kp V
-&kp P   &kp L   &kp W      &kp M        &kp F   &kp O   &kp DOT      &kp J         &kp X   &kp Z
+&kp Q   &kp W   &kp E      &kp R        &kp T   &kp Y   &kp U        &kp I         &kp O   &kp P
+&kp A   &kp S   &kp D      &kp F        &kp G   &kp H   &kp J        &kp K         &kp L   &kp V
+&kp Z   &kp X   &kp C      &kp V        &kp B   &kp N   &kp M        &kp J         &kp X   &kp Z
 &trans  &trans  &kp LCTRL  &lt 4 SPACE  &trans  &trans  &lt 5 ENTER  &kp LEFT_WIN  &trans  &trans
             >;
 
